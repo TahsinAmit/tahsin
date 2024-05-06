@@ -1118,31 +1118,109 @@ const recommendation = {
   63: () => (
     <div>
       <h1>Recommendation page: 63</h1>
+      <div>
+  <div className="option" id="RAT_REC3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat. Get complimentary access to a live Q&amp;A session.</p>
+    <button data-choice="RAT_REC3" onclick="redirectToNextPage('RAT_REC3')">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_REC3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekB" /> seat. Get complementary accesss to a live Q&amp;A session.</p>
+    <button data-choice="NRA_REC3" onclick="redirectToNextPage('NRA_REC3')">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   64: () => (
     <div>
       <h1>Recommendation page: 64</h1>
+      <div>
+  <div className="option" id="RAT_COM3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat. This program allows you to reach your goal effectively. </p>
+    <button data-choice="RAT_COM3" onclick="redirectToNextPage('RAT_COM3')">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_COM3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekB" /> seat.This program allows you to reach your goal effectively.</p>
+    <button data-choice="NRA_COM3" onclick="redirectToNextPage('NRA_COM3')">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   65: () => (
     <div>
       <h1>Recommendation page: 65</h1>
+      <div>
+  <div className="option" id="RAT_AUT3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat. Recommended by Times Higher Education ranking. </p>
+    <button data-choice="RAT_AUT3" onclick="redirectToNextPage('RAT_AUT3')">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_AUT3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekB" /> seat.Recommended by Times Higher Education ranking.</p>
+    <button data-choice="NRA_AUT3" onclick="redirectToNextPage('NRA_AUT3')">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   66: () => (
     <div>
       <h1>Recommendation page: 66</h1>
+      <div>
+  <div className="option" id="RAT_SOC3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.People in your age group with a <span id="education" /> prefer this program. </p>
+    <button data-choice="RAT_SOC3" onclick="redirectToNextPage('RAT_SOC3')">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SOC3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekB" /> seat.People in your age group with a <span id="education" /> prefer this program.</p>
+    <button data-choice="NRA_SOC3" onclick="redirectToNextPage('NRA_SOC3')">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   67: () => (
     <div>
       <h1>Recommendation page: 67</h1>
+      <div>
+  <div className="option" id="RAT_LIK3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.Rated highly by your friend <span id="bestFriend"> </span> </p>
+    <button data-choice="RAT_LIK3" onclick="redirectToNextPage('RAT_LIK3')">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_LIK3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekB" /> seat.Rated highly by your friend <span id="bestFriend"> </span></p>
+    <button data-choice="NRA_LIK3" onclick="redirectToNextPage('NRA_LIK3')">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   68: () => (
     <div>
       <h1>Recommendation page: 68</h1>
+      <div>
+  <div className="option" id="RAT_SCA3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat. Only 3 slots left, limited time offer! </p>
+    <button data-choice="RAT_SCA3" onclick="redirectToNextPage('RAT_SCA3')">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SCA3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekB" /> seat. Only 3 slots left, limited time offer!</p>
+    <button data-choice="NRA_SCA3" onclick="redirectToNextPage('NRA_SCA3')">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   69: () => (

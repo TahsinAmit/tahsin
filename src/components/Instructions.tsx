@@ -168,7 +168,7 @@ const instruction = {
           <select id="learningMethods" {...register('learningMethods', { required: true })}>
             <option value="">Select</option>
             <option value="Video lectures">Video lectures</option>
-            <option value="Interactive">Interactive</option>
+            <option value="Interactive tutorial">Interactive</option>
             <option value="Lecture slides">Lecture slides</option>
           </select>
           
