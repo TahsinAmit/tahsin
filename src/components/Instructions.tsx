@@ -1,27 +1,15 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { useAppState } from '../state/state';
-
-interface IFormInput {
-  preferredDestination: string;
-  layoverDuration: string;
-  budget: string;
-  seatPreference: string;
-  fitnessGoal: string;
-  timePerSession: string;
-  sessionsPerWeek: string;
-  learningGoal: string;
-  learningMethods: string;
-  timePerWeek: string;
-  fieldOfStudy: string;
-}
+import { InstructionProps } from '../@types';
 
 const instruction = {
   1: () => {
-    const { register, handleSubmit } = useForm<IFormInput>();
+    const { register, handleSubmit } = useForm<InstructionProps>();
     const setActivePage = useAppState((s) => s.setActivePage);
-    const onSubmit: SubmitHandler<IFormInput> = (data) => {
-      console.log(data);
+    const setInstructionValues = useAppState((s) => s.setInstructionValues);
+    const onSubmit: SubmitHandler<InstructionProps> = (data) => {
+      setInstructionValues(data);
       setActivePage('recommendations');
     };
 
@@ -81,9 +69,9 @@ const instruction = {
     );
   },
   2: () => {
-    const { register, handleSubmit } = useForm<IFormInput>();
+    const { register, handleSubmit } = useForm<InstructionProps>();
     const setActivePage = useAppState((s) => s.setActivePage);
-    const onSubmit: SubmitHandler<IFormInput> = (data) => {
+    const onSubmit: SubmitHandler<InstructionProps> = (data) => {
       console.log(data);
       setActivePage('recommendations');
     };
@@ -140,9 +128,9 @@ const instruction = {
     );
   },
   3: () => {
-    const { register, handleSubmit } = useForm<IFormInput>();
+    const { register, handleSubmit } = useForm<InstructionProps>();
     const setActivePage = useAppState((s) => s.setActivePage);
-    const onSubmit: SubmitHandler<IFormInput> = (data) => {
+    const onSubmit: SubmitHandler<InstructionProps> = (data) => {
       console.log(data);
       setActivePage('recommendations');
     };

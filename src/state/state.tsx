@@ -4,6 +4,7 @@ import Instructions from '../components/Instructions';
 import Recommendations from '../components/Recommendations';
 import { randomNumber } from '../utils';
 import Feedback from '../components/Feedback';
+import { InstructionProps } from '../@types';
 
 function randomId(): string {
   const uint32 = window.crypto.getRandomValues(new Uint32Array(1))[0];
@@ -26,9 +27,13 @@ interface State {
   instructionPageNumber: number;
   activeRandomPageIndex: number;
   setActiveRandomPageIndex: (activeRandomPageIndex: number) => void;
+  recommendationValues: string[];
+  instructionValues?: InstructionProps;
+  setInstructionValues: (props: InstructionProps) => void;
+  setRecommendationValues: (recommendationValue: string) => void;
 }
 
-export const useAppState = create<State>((set) => ({
+export const useAppState = create<State>((set, state) => ({
   sessionId: randomId(),
   activePage: pages.home,
   instructionPageNumber: randomNumber(1, 3),
@@ -38,5 +43,13 @@ export const useAppState = create<State>((set) => ({
   },
   setActiveRandomPageIndex(activeRandomPageIndex) {
     set({ activeRandomPageIndex });
+  },
+  recommendationValues: [],
+  setRecommendationValues(recommendationValue) {
+    const recommendationValues = state().recommendationValues.concat(recommendationValue);
+    set({ recommendationValues });
+  },
+  setInstructionValues(instructionValues) {
+    set({ instructionValues });
   },
 }));
