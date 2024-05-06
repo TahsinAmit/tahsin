@@ -20,151 +20,541 @@ const recommendation = {
   2: () => (
     <div>
       <h1>Recommendation page: 2</h1>
+      <div>
+  <div className="option" id="RAT_COM1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. Stay committed to your green goals.</p>
+    <button data-choice="RAT_COM1" onclick="redirectToNextPage('RAT_COM1')">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_COM1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Stay committed to your green goals.</p>
+    <button data-choice="NRA_COM1" onclick="redirectToNextPage('NRA_COM1')">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   3: () => (
     <div>
       <h1>Recommendation page: 3</h1>
+      <div>
+  <div className="option" id="RAT_AUT1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. Endorsed by your <span id="authorityFigureOutput" />.</p>
+    <button data-choice="RAT_AUT1" onclick="redirectToNextPage('RAT_AUT1')">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_AUT1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Endorsed by your <span id="authorityFigureOutput" />.</p>
+    <button data-choice="NRA_AUT1" onclick="redirectToNextPage('NRA_AUT1')">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   4: () => (
     <div>
       <h1>Recommendation page: 4</h1>
+      <div>
+  <div className="option" id="RAT_SOC1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat.  Highly rated by people in the same income level groups as you.</p>
+    <button data-choice="RAT_SOC1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SOC1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat.  Highly rated by people in the same income level groups as you.</p>
+    <button data-choice="NRA_SOC1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   5: () => (
     <div>
       <h1>Recommendation page: 5</h1>
+      <div>
+  <div className="option" id="RAT_LIK1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat.  Also preferred by your friend <span id="bestFriendOutput" />.</p>
+    <button data-choice="RAT_LIK1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_LIK1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat.  Also preferred by your friend <span id="bestFriendOutput" />.</p>
+    <button data-choice="NRA_LIK1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   6: () => (
     <div>
       <h1>Recommendation page: 6</h1>
+      <div>
+  <div className="option" id="RAT_SCA1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. Exclusive offer ending soon. We only have 3 seats left!</p>
+    <button data-choice="RAT_SCA1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SCA1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Exclusive offer ending soon. We only have 3 seats left!</p>
+    <button data-choice="NRA_SCA1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   7: () => (
     <div>
       <h1>Recommendation page: 7</h1>
+      <div>
+  <div className="option" id="SR_REC1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. *****</p>
+    <button data-choice="SR_REC1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="REC1_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an <span id="seatB" /> seat. Enjoy a complementary drink.</p>
+    <button data-choice="REC1_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   8: () => (
     <div>
       <h1>Recommendation page: 8</h1>
+      <div>
+  <div className="option" id="SR_COM1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. *****</p>
+    <button data-choice="SR_COM1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="COM1_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an <span id="seatB" /> seat. Stay committed to your green goals.</p>
+    <button data-choice="COM1_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   9: () => (
     <div>
       <h1>Recommendation page: 9</h1>
+      <div>
+  <div className="option" id="SR_AUT1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. *****</p>
+    <button data-choice="SR_AUT1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="AUT1_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an <span id="seatB" /> seat. Endorsed by your <span id="authorityFigureOutput" />.</p>
+    <button data-choice="AUT1_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   10: () => (
     <div>
       <h1>Recommendation page: 10</h1>
+      <div>
+  <div className="option" id="SR_SOC1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. *****</p>
+    <button data-choice="SR_SOC1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="SOC1_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an <span id="seatB" /> seat. Highly rated by people in the same income level groups as you.</p>
+    <button data-choice="SOC1_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   11: () => (
     <div>
       <h1>Recommendation page: 11</h1>
+      <div>
+  <div className="option" id="SR_LIK1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. *****</p>
+    <button data-choice="SR_LIK1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="LIK1_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an <span id="seatB" /> seat. Also preferred by your friend <span id="bestFriendOutput" />. </p>
+    <button data-choice="LIK1_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   12: () => (
     <div>
       <h1>Recommendation page: 12</h1>
+      <div>
+  <div className="option" id="SR_SCA1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. *****</p>
+    <button data-choice="SR_SCA1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="SCA1_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an <span id="seatB" /> seat. Exclusive offer ending soon. We only have 3 seats left! </p>
+    <button data-choice="SCA1_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   13: () => (
     <div>
       <h1>Recommendation page: 13</h1>
+      <div>
+  <div className="option" id="SR_NRA_REC1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. *****</p>
+    <button data-choice="SR_NRA_REC1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_REC1_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Enjoy a complementary drink. </p>
+    <button data-choice="NRA_REC1_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   14: () => (
     <div>
       <h1>Recommendation page: 14</h1>
+      <div>
+  <div className="option" id="SR_NRA_COM1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. *****</p>
+    <button data-choice="SR_NRA_COM1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_COM1_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Stay committed to your green goals. </p>
+    <button data-choice="NRA_COM1_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   15: () => (
     <div>
       <h1>Recommendation page: 15</h1>
+      <div>
+  <div className="option" id="SR_NRA_AUT1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. *****</p>
+    <button data-choice="SR_NRA_AUT1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_AUT1_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Endorsed by your <span id="authorityFigureOutput" />. </p>
+    <button data-choice="NRA_AUT1_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   16: () => (
     <div>
       <h1>Recommendation page: 16</h1>
+      <div>
+  <div className="option" id="SR_NRA_SOC1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. *****</p>
+    <button data-choice="SR_NRA_SOC1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SOC1_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Highly rated by people in the same income level groups as you. </p>
+    <button data-choice="NRA_SOC1_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   17: () => (
     <div>
       <h1>Recommendation page: 17</h1>
+      <div>
+  <div className="option" id="SR_NRA_LIK1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. *****</p>
+    <button data-choice="SR_NRA_LIK1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_LIK1_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Also preferred by your friend <span id="bestFriendOutput" />. </p>
+    <button data-choice="NRA_LIK1_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   18: () => (
     <div>
       <h1>Recommendation page: 18</h1>
+      <div>
+  <div className="option" id="SR_NRA_SCA1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. *****</p>
+    <button data-choice="SR_NRA_SCA1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SCA1_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Exclusive offer ending soon. We only have 3 seats left! </p>
+    <button data-choice="NRA_SCA1_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   19: () => (
     <div>
       <h1>Recommendation page: 19</h1>
+      <div>
+  <div className="option" id="SM_REC1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat.</p>
+    <button data-choice="SM_REC1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="REC1_SM">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an <span id="seatB" /> seat. Enjoy a complementary drink. </p>
+    <button data-choice="REC1_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   20: () => (
     <div>
       <h1>Recommendation page: 20</h1>
+      <div>
+  <div className="option" id="SM_COM1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat.</p>
+    <button data-choice="SM_COM1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="COM1_SM">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an <span id="seatB" /> seat. Stay committed to your green goals. </p>
+    <button data-choice="COM1_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   21: () => (
     <div>
       <h1>Recommendation page: 21</h1>
+      <div>
+  <div className="option" id="SM_AUT1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat.</p>
+    <button data-choice="SM_AUT1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="AUT1_SM">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an <span id="seatB" /> seat. Endorsed by your <span id="authorityFigureOutput" />. </p>
+    <button data-choice="AUT1_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   22: () => (
     <div>
       <h1>Recommendation page: 22</h1>
+      <div>
+  <div className="option" id="SM_SOC1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat.</p>
+    <button data-choice="SM_SOC1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="SOC1_SM">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an <span id="seatB" /> seat. Highly rated by people in the same income level groups as you. </p>
+    <button data-choice="SOC1_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   23: () => (
     <div>
       <h1>Recommendation page: 23</h1>
+      <div>
+  <div className="option" id="SM_LIK1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat.</p>
+    <button data-choice="SM_LIK1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="LIK1_SM">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an <span id="seatB" /> seat. Also preferred by your friend <span id="bestFriendOutput" />. </p>
+    <button data-choice="LIK1_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   24: () => (
     <div>
       <h1>Recommendation page: 24</h1>
+      <div>
+  <div className="option" id="SM_SCA1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat.</p>
+    <button data-choice="SM_SCA1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="SCA1_SM">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an <span id="seatB" /> seat. Exclusive offer ending soon. We only have 3 seats left! </p>
+    <button data-choice="SCA1_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   25: () => (
     <div>
       <h1>Recommendation page: 25</h1>
+      <div>
+  <div className="option" id="SM_NRA_REC1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat.</p>
+    <button data-choice="SM_NRA_REC1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_REC1_SM">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Enjoy a complementary drink. </p>
+    <button data-choice="NRA_REC1_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   26: () => (
     <div>
       <h1>Recommendation page: 26</h1>
+      <div>
+  <div className="option" id="SM_NRA_COM1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat.</p>
+    <button data-choice="SM_NRA_COM1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_COM1_SM">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Stay committed to your green choice. </p>
+    <button data-choice="NRA_COM1_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   27: () => (
     <div>
       <h1>Recommendation page: 27</h1>
+      <div>
+  <div className="option" id="SM_NRA_AUT1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat.</p>
+    <button data-choice="SM_NRA_AUT1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_AUT1_SM">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Endorsed by your <span id="authorityFigureOutput" />. </p>
+    <button data-choice="NRA_AUT1_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   28: () => (
     <div>
       <h1>Recommendation page: 28</h1>
+      <div>
+  <div className="option" id="SM_NRA_SOC1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat.</p>
+    <button data-choice="SM_NRA_SOC1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SOC1_SM">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Highly rated by people in the same income level groups as you. </p>
+    <button data-choice="NRA_SOC1_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   29: () => (
     <div>
       <h1>Recommendation page: 29</h1>
+      <div>
+  <div className="option" id="SM_NRA_LIK1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat.</p>
+    <button data-choice="SM_NRA_LIK1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_LIK1_SM">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Also preferred by your friend <span id="bestFriendOutput" />. </p>
+    <button data-choice="NRA_LIK1_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   30: () => (
     <div>
       <h1>Recommendation page: 30</h1>
+      <div>
+  <div className="option" id="SM_NRA_SCA1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat.</p>
+    <button data-choice="SM_NRA_SCA1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SCA1_SM">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Exclusive offer ending soon. We only have 3 seats left! </p>
+    <button data-choice="NRA_SCA1_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   31: () => (
     <div>
       <h1>Recommendation page: 31</h1>
+      <div>
+  <div className="option" id="SR_SM1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. ***** </p>
+    <button data-choice="SR_SM1" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="SM1_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. </p>
+    <button data-choice="SM1_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   32: () => (
