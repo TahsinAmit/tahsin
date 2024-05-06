@@ -50,9 +50,9 @@ const instruction = {
           <label htmlFor="budget">Budget:</label>
           <select id="budget" {...register('budget', { required: true })}>
             <option value="">Select</option>
-            <option value="350 USD">350 USD</option>
-            <option value="450 USD">450 USD</option>
-            <option value="500 USD">500 USD</option>
+            <option value={350}>350 USD</option>
+            <option value={450}>450 USD</option>
+            <option value={500}>500 USD</option>
           </select>
 
           <br />

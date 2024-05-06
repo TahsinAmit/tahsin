@@ -9,7 +9,7 @@ const recommendation = {
       <div className="option" id="RAT_REC1">
         {/* Placeholder for recommendation details */}
         <p>
-          Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+          Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
           {instructionValues.seatPreference} seat. Enjoy a complementary drink.
         </p>
         <button data-choice="RAT_REC1" onClick={() => onClick('RAT_REC1')}>
@@ -19,7 +19,7 @@ const recommendation = {
       <div className="option" id="NRA_REC1">
         {/* Placeholder for recommendation details */}
         <p>
-          Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+          Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
           {instructionValues.seatPreference} seat. Enjoy a complementary drink.
         </p>
         <button data-choice="NRA_REC1" onClick={() => onClick('NRA_REC1')}>
@@ -35,7 +35,7 @@ const recommendation = {
         <div className="option" id="RAT_COM1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Stay committed to your green goals.
           </p>
           <button data-choice="RAT_COM1" onClick={() => onClick('RAT_COM1')}>
@@ -45,7 +45,7 @@ const recommendation = {
         <div className="option" id="NRA_COM1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Stay committed to your green goals.
           </p>
           <button data-choice="NRA_COM1" onClick={() => onClick('NRA_COM1')}>
@@ -62,7 +62,7 @@ const recommendation = {
         <div className="option" id="RAT_AUT1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.
           </p>
           <button data-choice="RAT_AUT1" onClick={() => onClick('RAT_AUT1')}>
@@ -72,7 +72,7 @@ const recommendation = {
         <div className="option" id="NRA_AUT1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.
           </p>
           <button data-choice="NRA_AUT1" onClick={() => onClick('NRA_AUT1')}>
@@ -89,7 +89,7 @@ const recommendation = {
         <div className="option" id="RAT_SOC1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Highly rated by people in the same income level groups as you.
           </p>
           <button data-choice="RAT_SOC1" onClick={() => onClick('RAT_SOC1')}>
@@ -99,7 +99,7 @@ const recommendation = {
         <div className="option" id="NRA_SOC1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Highly rated by people in the same income level groups as you.
           </p>
           <button data-choice="NRA_SOC1" onClick={() => onClick('NRA_SOC1')}>
@@ -116,7 +116,7 @@ const recommendation = {
         <div className="option" id="RAT_LIK1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.
           </p>
           <button data-choice="RAT_LIK1" onClick={() => onClick('RAT_LIK1')}>
@@ -126,7 +126,7 @@ const recommendation = {
         <div className="option" id="NRA_LIK1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.
           </p>
           <button data-choice="NRA_LIK1" onClick={() => onClick('NRA_LIK1')}>
@@ -143,7 +143,7 @@ const recommendation = {
         <div className="option" id="RAT_SCA1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Exclusive offer ending soon. We only have 3 seats left!
           </p>
           <button data-choice="RAT_SCA1" onClick={() => onClick('RAT_SCA1')}>
@@ -153,7 +153,7 @@ const recommendation = {
         <div className="option" id="NRA_SCA1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Exclusive offer ending soon. We only have 3 seats left!
           </p>
           <button data-choice="NRA_SCA1" onClick={() => onClick('NRA_SCA1')}>
@@ -170,7 +170,7 @@ const recommendation = {
         <div className="option" id="SR_REC1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. *****
           </p>
           <button data-choice="SR_REC1" onClick={() => onClick('SR_REC1')}>
@@ -180,7 +180,7 @@ const recommendation = {
         <div className="option" id="REC1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
             {instructionValues.seatPreference} seat. Enjoy a complementary drink.
           </p>
           <button data-choice="REC1_SR" onClick={() => onClick('REC1_SR')}>
@@ -197,7 +197,7 @@ const recommendation = {
         <div className="option" id="SR_COM1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. *****
           </p>
           <button data-choice="SR_COM1" onClick={() => onClick('SR_COM1')}>
@@ -207,7 +207,7 @@ const recommendation = {
         <div className="option" id="COM1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
             {instructionValues.seatPreference} seat. Stay committed to your green goals.
           </p>
           <button data-choice="COM1_SR" onClick={() => onClick('COM1_SR')}>
@@ -224,7 +224,7 @@ const recommendation = {
         <div className="option" id="SR_AUT1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. *****
           </p>
           <button data-choice="SR_AUT1" onClick={() => onClick('SR_AUT1')}>
@@ -234,7 +234,7 @@ const recommendation = {
         <div className="option" id="AUT1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
             {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.
           </p>
           <button data-choice="AUT1_SR" onClick={() => onClick('AUT1_SR')}>
@@ -251,7 +251,7 @@ const recommendation = {
         <div className="option" id="SR_SOC1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. *****
           </p>
           <button data-choice="SR_SOC1" onClick={() => onClick('SR_SOC1')}>
@@ -261,7 +261,7 @@ const recommendation = {
         <div className="option" id="SOC1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
             {instructionValues.seatPreference} seat. Highly rated by people in the same income level groups as you.
           </p>
           <button data-choice="SOC1_SR" onClick={() => onClick('SOC1_SR')}>
@@ -278,7 +278,7 @@ const recommendation = {
         <div className="option" id="SR_LIK1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. *****
           </p>
           <button data-choice="SR_LIK1" onClick={() => onClick('SR_LIK1')}>
@@ -288,7 +288,7 @@ const recommendation = {
         <div className="option" id="LIK1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
             {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.{' '}
           </p>
           <button data-choice="LIK1_SR" onClick={() => onClick('LIK1_SR')}>
@@ -305,7 +305,7 @@ const recommendation = {
         <div className="option" id="SR_SCA1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. *****
           </p>
           <button data-choice="SR_SCA1" onClick={() => onClick('SR_SCA1')}>
@@ -315,7 +315,7 @@ const recommendation = {
         <div className="option" id="SCA1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
             {instructionValues.seatPreference} seat. Exclusive offer ending soon. We only have 3 seats left!{' '}
           </p>
           <button data-choice="SCA1_SR" onClick={() => onClick('SCA1_SR')}>
@@ -332,7 +332,7 @@ const recommendation = {
         <div className="option" id="SR_NRA_REC1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. *****
           </p>
           <button data-choice="SR_NRA_REC1" onClick={() => onClick('SR_NRA_REC1')}>
@@ -342,7 +342,7 @@ const recommendation = {
         <div className="option" id="NRA_REC1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Enjoy a complementary drink.{' '}
           </p>
           <button data-choice="NRA_REC1_SR" onClick={() => onClick('NRA_REC1_SR')}>
@@ -359,7 +359,7 @@ const recommendation = {
         <div className="option" id="SR_NRA_COM1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. *****
           </p>
           <button data-choice="SR_NRA_COM1" onClick={() => onClick('SR_NRA_COM1')}>
@@ -369,7 +369,7 @@ const recommendation = {
         <div className="option" id="NRA_COM1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Stay committed to your green goals.{' '}
           </p>
           <button data-choice="NRA_COM1_SR" onClick={() => onClick('NRA_COM1_SR')}>
@@ -386,7 +386,7 @@ const recommendation = {
         <div className="option" id="SR_NRA_AUT1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. *****
           </p>
           <button data-choice="SR_NRA_AUT1" onClick={() => onClick('SR_NRA_AUT1')}>
@@ -396,7 +396,7 @@ const recommendation = {
         <div className="option" id="NRA_AUT1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.{' '}
           </p>
           <button data-choice="NRA_AUT1_SR" onClick={() => onClick('NRA_AUT1_SR')}>
@@ -413,7 +413,7 @@ const recommendation = {
         <div className="option" id="SR_NRA_SOC1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. *****
           </p>
           <button data-choice="SR_NRA_SOC1" onClick={() => onClick('SR_NRA_SOC1')}>
@@ -423,7 +423,7 @@ const recommendation = {
         <div className="option" id="NRA_SOC1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Highly rated by people in the same income level groups as you.{' '}
           </p>
           <button data-choice="NRA_SOC1_SR" onClick={() => onClick('NRA_SOC1_SR')}>
@@ -440,7 +440,7 @@ const recommendation = {
         <div className="option" id="SR_NRA_LIK1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. *****
           </p>
           <button data-choice="SR_NRA_LIK1" onClick={() => onClick('SR_NRA_LIK1')}>
@@ -450,7 +450,7 @@ const recommendation = {
         <div className="option" id="NRA_LIK1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.{' '}
           </p>
           <button data-choice="NRA_LIK1_SR" onClick={() => onClick('NRA_LIK1_SR')}>
@@ -467,7 +467,7 @@ const recommendation = {
         <div className="option" id="SR_NRA_SCA1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. *****
           </p>
           <button data-choice="SR_NRA_SCA1" onClick={() => onClick('SR_NRA_SCA1')}>
@@ -477,7 +477,7 @@ const recommendation = {
         <div className="option" id="NRA_SCA1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Exclusive offer ending soon. We only have 3 seats left!{' '}
           </p>
           <button data-choice="NRA_SCA1_SR" onClick={() => onClick('NRA_SCA1_SR')}>
@@ -494,7 +494,7 @@ const recommendation = {
         <div className="option" id="SM_REC1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat.
           </p>
           <button data-choice="SM_REC1" onClick={() => onClick('SM_REC1')}>
@@ -504,7 +504,7 @@ const recommendation = {
         <div className="option" id="REC1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
             {instructionValues.seatPreference} seat. Enjoy a complementary drink.{' '}
           </p>
           <button data-choice="REC1_SM" onClick={() => onClick('REC1_SM')}>
@@ -521,7 +521,7 @@ const recommendation = {
         <div className="option" id="SM_COM1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat.
           </p>
           <button data-choice="SM_COM1" onClick={() => onClick('SM_COM1')}>
@@ -531,7 +531,7 @@ const recommendation = {
         <div className="option" id="COM1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
             {instructionValues.seatPreference} seat. Stay committed to your green goals.{' '}
           </p>
           <button data-choice="COM1_SM" onClick={() => onClick('COM1_SM')}>
@@ -548,7 +548,7 @@ const recommendation = {
         <div className="option" id="SM_AUT1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat.
           </p>
           <button data-choice="SM_AUT1" onClick={() => onClick('SM_AUT1')}>
@@ -558,7 +558,7 @@ const recommendation = {
         <div className="option" id="AUT1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
             {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.{' '}
           </p>
           <button data-choice="AUT1_SM" onClick={() => onClick('AUT1_SM')}>
@@ -575,7 +575,7 @@ const recommendation = {
         <div className="option" id="SM_SOC1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat.
           </p>
           <button data-choice="SM_SOC1" onClick={() => onClick('SM_SOC1')}>
@@ -585,7 +585,7 @@ const recommendation = {
         <div className="option" id="SOC1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
             {instructionValues.seatPreference} seat. Highly rated by people in the same income level groups as you.{' '}
           </p>
           <button data-choice="SOC1_SM" onClick={() => onClick('SOC1_SM')}>
@@ -602,7 +602,7 @@ const recommendation = {
         <div className="option" id="SM_LIK1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat.
           </p>
           <button data-choice="SM_LIK1" onClick={() => onClick('SM_LIK1')}>
@@ -612,7 +612,7 @@ const recommendation = {
         <div className="option" id="LIK1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
             {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.{' '}
           </p>
           <button data-choice="LIK1_SM" onClick={() => onClick('LIK1_SM')}>
@@ -629,7 +629,7 @@ const recommendation = {
         <div className="option" id="SM_SCA1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat.
           </p>
           <button data-choice="SM_SCA1" onClick={() => onClick('SM_SCA1')}>
@@ -639,7 +639,7 @@ const recommendation = {
         <div className="option" id="SCA1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to <span id="destinationB" /> for <span id="priceA" /> on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
             {instructionValues.seatPreference} seat. Exclusive offer ending soon. We only have 3 seats left!{' '}
           </p>
           <button data-choice="SCA1_SM" onClick={() => onClick('SCA1_SM')}>
@@ -656,7 +656,7 @@ const recommendation = {
         <div className="option" id="SM_NRA_REC1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat.
           </p>
           <button data-choice="SM_NRA_REC1" onClick={() => onClick('SM_NRA_REC1')}>
@@ -666,7 +666,7 @@ const recommendation = {
         <div className="option" id="NRA_REC1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Enjoy a complementary drink.{' '}
           </p>
           <button data-choice="NRA_REC1_SM" onClick={() => onClick('NRA_REC1_SM')}>
@@ -683,7 +683,7 @@ const recommendation = {
         <div className="option" id="SM_NRA_COM1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat.
           </p>
           <button data-choice="SM_NRA_COM1" onClick={() => onClick('SM_NRA_COM1')}>
@@ -693,7 +693,7 @@ const recommendation = {
         <div className="option" id="NRA_COM1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Stay committed to your green choice.{' '}
           </p>
           <button data-choice="NRA_COM1_SM" onClick={() => onClick('NRA_COM1_SM')}>
@@ -710,7 +710,7 @@ const recommendation = {
         <div className="option" id="SM_NRA_AUT1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat.
           </p>
           <button data-choice="SM_NRA_AUT1" onClick={() => onClick('SM_NRA_AUT1')}>
@@ -720,7 +720,7 @@ const recommendation = {
         <div className="option" id="NRA_AUT1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.{' '}
           </p>
           <button data-choice="NRA_AUT1_SM" onClick={() => onClick('NRA_AUT1_SM')}>
@@ -737,7 +737,7 @@ const recommendation = {
         <div className="option" id="SM_NRA_SOC1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat.
           </p>
           <button data-choice="SM_NRA_SOC1" onClick={() => onClick('SM_NRA_SOC1')}>
@@ -747,7 +747,7 @@ const recommendation = {
         <div className="option" id="NRA_SOC1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Highly rated by people in the same income level groups as you.{' '}
           </p>
           <button data-choice="NRA_SOC1_SM" onClick={() => onClick('NRA_SOC1_SM')}>
@@ -764,7 +764,7 @@ const recommendation = {
         <div className="option" id="SM_NRA_LIK1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat.
           </p>
           <button data-choice="SM_NRA_LIK1" onClick={() => onClick('SM_NRA_LIK1')}>
@@ -774,7 +774,7 @@ const recommendation = {
         <div className="option" id="NRA_LIK1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.{' '}
           </p>
           <button data-choice="NRA_LIK1_SM" onClick={() => onClick('NRA_LIK1_SM')}>
@@ -791,7 +791,7 @@ const recommendation = {
         <div className="option" id="SM_NRA_SCA1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat.
           </p>
           <button data-choice="SM_NRA_SCA1" onClick={() => onClick('SM_NRA_SCA1')}>
@@ -801,7 +801,7 @@ const recommendation = {
         <div className="option" id="NRA_SCA1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. Exclusive offer ending soon. We only have 3 seats left!{' '}
           </p>
           <button data-choice="NRA_SCA1_SM" onClick={() => onClick('NRA_SCA1_SM')}>
@@ -818,7 +818,7 @@ const recommendation = {
         <div className="option" id="SR_SM1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat. *****{' '}
           </p>
           <button data-choice="SR_SM1" onClick={() => onClick('SR_SM1')}>
@@ -828,7 +828,7 @@ const recommendation = {
         <div className="option" id="SM1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
             {instructionValues.seatPreference} seat.{' '}
           </p>
           <button data-choice="SM1_SR" onClick={() => onClick('SM1_SR')}>

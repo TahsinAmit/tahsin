@@ -1,7 +1,7 @@
 export interface InstructionProps {
   preferredDestination: string;
   layoverDuration: string;
-  budget: string;
+  budget: number;
   seatPreference: string;
   fitnessGoal: string;
   timePerSession: string;
