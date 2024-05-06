@@ -38,7 +38,7 @@ export default function Home() {
       <form onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor="ageGroup">What is your age group?</label>
         <select {...register('ageGroup', { required: true })} id="ageGroup">
-          <option>Select</option>
+          <option value="">Select</option>
           <option value="Under 18">Under 18</option>
           <option value="18 to 30">18 to 30</option>
           <option value="30 to 45">30 to 45</option>
@@ -58,7 +58,7 @@ export default function Home() {
             },
           })}
         >
-          <option>Select</option>
+          <option value="">Select</option>
           <option value="Black or African-American">Black or African-American</option>
           <option value="American Indian or Alaskan Native">American Indian or Alaskan Native</option>
           <option value="Asian">Asian</option>
@@ -80,7 +80,7 @@ export default function Home() {
             },
           })}
         >
-          <option>Select</option>
+          <option value="">Select</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Something else">Something else (please specify)</option>
@@ -95,7 +95,7 @@ export default function Home() {
 
         <label htmlFor="education">What is the highest level of education you have completed?</label>
         <select id="education" {...register('education', { required: true })}>
-          <option>Select</option>
+          <option value="">Select</option>
           <option value="Less than high school degree">Less than high school degree</option>
           <option value="High school degree or equivalent (e.g., GED)">
             High school degree or equivalent (e.g., GED)
@@ -109,7 +109,7 @@ export default function Home() {
         <br />
         <label htmlFor="maritalStatus">What is your marital status?</label>
         <select id="maritalStatus" {...register('maritalStatus', { required: true })}>
-          <option>Select</option>
+          <option value="">Select</option>
           <option value="Married">Married</option>
           <option value="Never married">Never married</option>
           <option value="Widowed">Widowed</option>
@@ -119,7 +119,7 @@ export default function Home() {
         <br />
         <label htmlFor="employment">What is your current employment status?</label>
         <select id="employment" {...register('employment', { required: true })}>
-          <option>Select</option>
+          <option value="">Select</option>
           <option value="Employed part time">Employed part time</option>
           <option value="Employed full time">Employed full time</option>
           <option value="Not employed, looking for work">Not employed, looking for work</option>
@@ -131,7 +131,7 @@ export default function Home() {
         <br />
         <label htmlFor="income">What is your annual household income range?</label>
         <select id="income" {...register('income', { required: true })}>
-          <option>Select</option>
+          <option value="">Select</option>
           <option value="$0 – $9,999">$0 – $9,999</option>
           <option value="$10,000 – $19,999">$10,000 – $19,999</option>
           <option value="$20,000 – $29,999">$20,000 – $29,999</option>
@@ -148,7 +148,7 @@ export default function Home() {
         <br />
         <label htmlFor="householdSize">How many people are currently living in your house?</label>
         <select id="householdSize" {...register('householdSize', { required: true })}>
-          <option>Select</option>
+          <option value="">Select</option>
           <option value="None">None</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -160,7 +160,7 @@ export default function Home() {
 
         <label htmlFor="homeOwnership">Do you currently own or rent your home?</label>
         <select id="homeOwnership" {...register('homeOwnership', { required: true })}>
-          <option>Select</option>
+          <option value="">Select</option>
           <option value="Own my home">Own my home</option>
           <option value="Rent my home">Rent my home</option>
           <option value="Other">Other (please specify)</option>
@@ -172,7 +172,7 @@ export default function Home() {
         <br />
         <label htmlFor="authorityFigure">Which authority figure would you trust more?</label>
         <select id="authorityFigure" {...register('authorityFigure', { required: true })}>
-          <option>Select</option>
+          <option value="">Select</option>
           <option value="Government officials">Government officials</option>
           <option value="Local police">Local police</option>
           <option value="Medical professional">Medical professional</option>
@@ -182,7 +182,7 @@ export default function Home() {
         <br />
         <label htmlFor="environmentalChoices">How dedicated are you to making environmentally friendly choices?</label>
         <select id="environmentalChoices" {...register('environmentalChoices', { required: true })}>
-          <option>Select</option>
+          <option value="">Select</option>
           <option value="Highly likely">Highly likely</option>
           <option value="Likely">Likely</option>
           <option value="Neutral">Neutral</option>
