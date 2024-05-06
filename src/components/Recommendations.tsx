@@ -674,10 +674,10 @@ const recommendation = {
     <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. ***** </p>
     <button data-choice="SR_REC2" onclick="redirectToNextPage()">Choose this option</button>
   </div>
-  <div className="option" id="NRA_REC2">
+  <div className="option" id="REC2_SR">
     {/* Placeholder for recommendation details */}
     <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. Get a free  nutrition guide. </p>
-    <button data-choice="NRA_REC2" onclick="redirectToNextPage()">Choose this option</button>
+    <button data-choice="REC2_SR" onclick="redirectToNextPage()">Choose this option</button>
   </div>
 </div>
 
@@ -692,10 +692,10 @@ const recommendation = {
     <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />.  ***** </p>
     <button data-choice="SR_COM2" onclick="redirectToNextPage()">Choose this option</button>
   </div>
-  <div className="option" id="NRA_COM2">
+  <div className="option" id="COM2_SR">
     {/* Placeholder for recommendation details */}
     <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. This plan allows to reach your fitness goal effectively. </p>
-    <button data-choice="NRA_COM2" onclick="redirectToNextPage()">Choose this option</button>
+    <button data-choice="COM2_SR" onclick="redirectToNextPage()">Choose this option</button>
   </div>
 </div>
 
@@ -710,10 +710,10 @@ const recommendation = {
     <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. ***** </p>
     <button data-choice="SR_AUT2" onclick="redirectToNextPage()">Choose this option</button>
   </div>
-  <div className="option" id="NRA_AUT2">
+  <div className="option" id="AUT2_SR">
     {/* Placeholder for recommendation details */}
     <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. This program is compliant with your health insurance provider. </p>
-    <button data-choice="NRA_AUT2" onclick="redirectToNextPage()">Choose this option</button>
+    <button data-choice="AUT2_SR" onclick="redirectToNextPage()">Choose this option</button>
   </div>
 </div>
 
@@ -728,10 +728,10 @@ const recommendation = {
     <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />.  ***** </p>
     <button data-choice="SR_SOC2" onclick="redirectToNextPage()">Choose this option</button>
   </div>
-  <div className="option" id="NRA_SOC2">
+  <div className="option" id="SOC2_SR">
     {/* Placeholder for recommendation details */}
     <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. Trusted by other students from your area. </p>
-    <button data-choice="NRA_SOC2" onclick="redirectToNextPage()">Choose this option</button>
+    <button data-choice="SOC2_SR" onclick="redirectToNextPage()">Choose this option</button>
   </div>
 </div>
 
@@ -746,10 +746,10 @@ const recommendation = {
     <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. ***** </p>
     <button data-choice="SR_LIK2" onclick="redirectToNextPage()">Choose this option</button>
   </div>
-  <div className="option" id="NRA_LIK2">
+  <div className="option" id="LIK2_SR">
     {/* Placeholder for recommendation details */}
     <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. Recommended by your friend X. </p>
-    <button data-choice="NRA_LIK2" onclick="redirectToNextPage()">Choose this option</button>
+    <button data-choice="LIK2_SR" onclick="redirectToNextPage()">Choose this option</button>
   </div>
 </div>
 
@@ -764,10 +764,10 @@ const recommendation = {
     <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />.  ***** </p>
     <button data-choice="SR_SCA2" onclick="redirectToNextPage()">Choose this option</button>
   </div>
-  <div className="option" id="NRA_SCA2">
+  <div className="option" id="SCA2_SR">
     {/* Placeholder for recommendation details */}
     <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. Available for a limited time. 5 out of 50 passes left only! </p>
-    <button data-choice="NRA_SCA2" onclick="redirectToNextPage()">Choose this option</button>
+    <button data-choice="SCA2_SR" onclick="redirectToNextPage()">Choose this option</button>
   </div>
 </div>
 
@@ -1226,31 +1226,109 @@ const recommendation = {
   69: () => (
     <div>
       <h1>Recommendation page: 69</h1>
+      <div>
+  <div className="option" id="SR_REC3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat. ***** </p>
+    <button data-choice="SR_REC3" onclick="redirectToNextPage('SR_REC3')">Choose this option</button>
+  </div>
+  <div className="option" id="REC3_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.  Get complimentary access to a live Q&amp;A session.</p>
+    <button data-choice="REC3_SR" onclick="redirectToNextPage('REC3_SR')">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   70: () => (
     <div>
       <h1>Recommendation page: 70</h1>
+      <div>
+  <div className="option" id="SR_COM3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat. ***** </p>
+    <button data-choice="SR_COM3" onclick="redirectToNextPage('SR_COM3')">Choose this option</button>
+  </div>
+  <div className="option" id="COM3_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat. This program allows you to reach your goal effectively.</p>
+    <button data-choice="COM3_SR" onclick="redirectToNextPage('COM3_SR')">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   71: () => (
     <div>
       <h1>Recommendation page: 71</h1>
+      <div>
+  <div className="option" id="SR_AUT3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat. ***** </p>
+    <button data-choice="SR_AUT3" onclick="redirectToNextPage('SR_AUT3')">Choose this option</button>
+  </div>
+  <div className="option" id="AUT3_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat. Recommended by Times Higher Education ranking.</p>
+    <button data-choice="AUT3_SR" onclick="redirectToNextPage('AUT3_SR')">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   72: () => (
     <div>
       <h1>Recommendation page: 72</h1>
+      <div>
+  <div className="option" id="SR_SOC3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat. ***** </p>
+    <button data-choice="SR_SOC3" onclick="redirectToNextPage('SR_SOC3')">Choose this option</button>
+  </div>
+  <div className="option" id="SOC3_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.People in your age group with a <span id="education" /> prefer this program.</p>
+    <button data-choice="SOC3_SR" onclick="redirectToNextPage('SOC3_SR')">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   73: () => (
     <div>
       <h1>Recommendation page: 73</h1>
+      <div>
+  <div className="option" id="SR_LIK3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat. ***** </p>
+    <button data-choice="SR_LIK3" onclick="redirectToNextPage('SR_LIK3')">Choose this option</button>
+  </div>
+  <div className="option" id="LIK3_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.Rated highly by your friend <span id="bestFriend"> </span></p>
+    <button data-choice="LIK3_SR" onclick="redirectToNextPage('LIK3_SR')">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   74: () => (
     <div>
       <h1>Recommendation page: 74</h1>
+      <div>
+  <div className="option" id="SR_SCA3">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat. ***** </p>
+    <button data-choice="SR_SCA3" onclick="redirectToNextPage('SR_SCA3')">Choose this option</button>
+  </div>
+  <div className="option" id="SCA3_SR">
+    {/* Placeholder for recommendation details */}
+    <p>Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat. Only 3 slots left, limited time offer!</p>
+    <button data-choice="SCA3_SR" onclick="redirectToNextPage('SCA3_SR')">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   75: () => (
