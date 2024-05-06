@@ -5,6 +5,16 @@ const recommendation = {
   1: () => (
     <div>
       <h1>Recommendation page: 1</h1>
+      <div className="option" id="RAT_REC1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationA" /> for <span id="priceA" /> on an <span id="seatA" /> seat. Enjoy a complementary drink.</p>
+    <button data-choice="RAT_REC1" onclick="redirectToNextPage('RAT_REC1')">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_REC1">
+    {/* Placeholder for recommendation details */}
+    <p>Direct flight to <span id="destinationB" /> for <span id="priceB" /> on an <span id="seatB" /> seat. Enjoy a complementary drink.</p>
+    <button data-choice="NRA_REC1" onclick="redirectToNextPage('NRA_REC1')">Choose this option</button>
+  </div>
     </div>
   ),
   2: () => (
