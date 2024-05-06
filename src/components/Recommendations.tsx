@@ -560,156 +560,559 @@ const recommendation = {
   32: () => (
     <div>
       <h1>Recommendation page: 32</h1>
+      <div id="recommendations" className="flex-container">
+  <div className="option" id="RAT_REC2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. Get a free nutrition guide.</p>
+    <button data-choice="RAT_REC2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_REC2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Get a free nutrition guide.</p>
+    <button data-choice="NRA_REC2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   33: () => (
     <div>
       <h1>Recommendation page: 33</h1>
+      <div>
+  <div className="option" id="RAT_COM2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. This plan allows to reach your fitness goal effectively.</p>
+    <button data-choice="RAT_COM2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_COM2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. This plan allows to reach your fitness goal effectively.</p>
+    <button data-choice="NRA_COM2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   34: () => (
     <div>
       <h1>Recommendation page: 34</h1>
+      <div>
+  <div className="option" id="RAT_AUT2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />.This program is compliant with your health insurance provider. </p>
+    <button data-choice="RAT_AUT2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_AUT2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. This program is compliant with your health insurance provider.</p>
+    <button data-choice="NRA_AUT2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   35: () => (
     <div>
       <h1>Recommendation page: 35</h1>
+      <div>
+  <div className="option" id="RAT_SOC2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />.Trusted by other students from your area. </p>
+    <button data-choice="RAT_SOC2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SOC2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Trusted by other students from your area.</p>
+    <button data-choice="NRA_SOC2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   36: () => (
     <div>
       <h1>Recommendation page: 36</h1>
+      <div>
+  <div className="option" id="RAT_LIK2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />.Recommended by your friend X. </p>
+    <button data-choice="RAT_LIK2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_LIK2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Recommended by your friend X.</p>
+    <button data-choice="NRA_LIK2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   37: () => (
     <div>
       <h1>Recommendation page: 37</h1>
+      <div>
+  <div className="option" id="RAT_SCA2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />.Available for a limited time. 5 out of 50 passes left only! </p>
+    <button data-choice="RAT_SCA2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SCA2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Available for a limited time. 5 out of 50 passes left only! </p>
+    <button data-choice="NRA_SCA2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   38: () => (
     <div>
       <h1>Recommendation page: 38</h1>
+      <div>
+  <div className="option" id="SR_REC2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. ***** </p>
+    <button data-choice="SR_REC2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_REC2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. Get a free  nutrition guide. </p>
+    <button data-choice="NRA_REC2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   39: () => (
     <div>
       <h1>Recommendation page: 39</h1>
+      <div>
+  <div className="option" id="SR_COM2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />.  ***** </p>
+    <button data-choice="SR_COM2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_COM2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. This plan allows to reach your fitness goal effectively. </p>
+    <button data-choice="NRA_COM2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   40: () => (
     <div>
       <h1>Recommendation page: 40</h1>
+      <div>
+  <div className="option" id="SR_AUT2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. ***** </p>
+    <button data-choice="SR_AUT2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_AUT2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. This program is compliant with your health insurance provider. </p>
+    <button data-choice="NRA_AUT2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   41: () => (
     <div>
       <h1>Recommendation page: 41</h1>
+      <div>
+  <div className="option" id="SR_SOC2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />.  ***** </p>
+    <button data-choice="SR_SOC2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SOC2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. Trusted by other students from your area. </p>
+    <button data-choice="NRA_SOC2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   42: () => (
     <div>
       <h1>Recommendation page: 42</h1>
+      <div>
+  <div className="option" id="SR_LIK2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. ***** </p>
+    <button data-choice="SR_LIK2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_LIK2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. Recommended by your friend X. </p>
+    <button data-choice="NRA_LIK2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   43: () => (
     <div>
       <h1>Recommendation page: 43</h1>
+      <div>
+  <div className="option" id="SR_SCA2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />.  ***** </p>
+    <button data-choice="SR_SCA2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SCA2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. Available for a limited time. 5 out of 50 passes left only! </p>
+    <button data-choice="NRA_SCA2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   44: () => (
     <div>
       <h1>Recommendation page: 44</h1>
+      <div>
+  <div className="option" id="SR_NRA_REC2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. ***** </p>
+    <button data-choice="SR_NRA_REC2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_REC2_SR">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Get a free  nutrition guide. </p>
+    <button data-choice="NRA_REC2_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   45: () => (
     <div>
       <h1>Recommendation page: 45</h1>
+      <div>
+  <div className="option" id="SR_NRA_COM2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. ***** </p>
+    <button data-choice="SR_NRA_COM2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_COM2_SR">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. This plan allows to reach your fitness goal effectively. </p>
+    <button data-choice="NRA_COM2_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   46: () => (
     <div>
       <h1>Recommendation page: 46</h1>
+      <div>
+  <div className="option" id="SR_NRA_AUT2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. ***** </p>
+    <button data-choice="SR_NRA_AUT2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_AUT2_SR">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. This program is compliant with your health insurance provider. </p>
+    <button data-choice="NRA_AUT2_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   47: () => (
     <div>
       <h1>Recommendation page: 47</h1>
+      <div>
+  <div className="option" id="SR_NRA_SOC2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. ***** </p>
+    <button data-choice="SR_NRA_SOC2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SOC2_SR">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Trusted by other students from your area. </p>
+    <button data-choice="NRA_SOC2_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   48: () => (
     <div>
       <h1>Recommendation page: 48</h1>
+      <div>
+  <div className="option" id="SR_NRA_LIK2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. ***** </p>
+    <button data-choice="SR_NRA_LIK2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_LIK2_SR">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Recommended by your friend X. </p>
+    <button data-choice="NRA_LIK2_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   49: () => (
     <div>
       <h1>Recommendation page: 49</h1>
+      <div>
+  <div className="option" id="SR_NRA_SCA2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. ***** </p>
+    <button data-choice="SR_NRA_SCA2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SCA2_SR">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Available for a limited time. 5 out of 50 passes left only! </p>
+    <button data-choice="NRA_SCA2_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   50: () => (
     <div>
       <h1>Recommendation page: 50</h1>
+      <div>
+  <div className="option" id="SM_REC2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. </p>
+    <button data-choice="SM_REC2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="REC2_SM">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. Get a free  nutrition guide. </p>
+    <button data-choice="REC2_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   51: () => (
     <div>
       <h1>Recommendation page: 51</h1>
+      <div>
+  <div className="option" id="SM_COM2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. </p>
+    <button data-choice="SM_COM2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="COM2_SM">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. This plan allows to reach your fitness goal effectively. </p>
+    <button data-choice="COM2_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   52: () => (
     <div>
       <h1>Recommendation page: 52</h1>
+      <div>
+  <div className="option" id="SM_AUT2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. </p>
+    <button data-choice="SM_AUT2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="AUT2_SM">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. This program is compliant with your health insurance provider. </p>
+    <button data-choice="AUT2_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   53: () => (
     <div>
       <h1>Recommendation page: 53</h1>
+      <div>
+  <div className="option" id="SM_SOC2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. </p>
+    <button data-choice="SM_SOC2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="SOC2_SM">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. Trusted by other students from your area.</p>
+    <button data-choice="SOC2_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   54: () => (
     <div>
       <h1>Recommendation page: 54</h1>
+      <div>
+  <div className="option" id="SM_LIK2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. </p>
+    <button data-choice="SM_LIK2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="LIK2_SM">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. Recommended by your friend X. </p>
+    <button data-choice="LIK2_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   55: () => (
     <div>
       <h1>Recommendation page: 55</h1>
+      <div>
+  <div className="option" id="SM_SCA2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. </p>
+    <button data-choice="SM_SCA2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="SCA2_SM">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. Available for a limited time. 5 out of 50 passes left only! </p>
+    <button data-choice="SCA2_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   56: () => (
     <div>
       <h1>Recommendation page: 56</h1>
+      <div>
+  <div className="option" id="SM_NRA_REC2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. </p>
+    <button data-choice="SM_NRA_REC2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_REC2_SM">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Get a free  nutrition guide.</p>
+    <button data-choice="NRA_REC2_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   57: () => (
     <div>
       <h1>Recommendation page: 57</h1>
+      <div>
+  <div className="option" id="SM_NRA_COM2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. </p>
+    <button data-choice="SM_NRA_COM2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_COM2_SM">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. This plan allows to reach your fitness goal effectively.</p>
+    <button data-choice="NRA_COM2_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   58: () => (
     <div>
       <h1>Recommendation page: 58</h1>
+      <div>
+  <div className="option" id="SM_NRA_AUT2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. </p>
+    <button data-choice="SM_NRA_AUT2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_AUT2_SM">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. This program is compliant with your health insurance provider.</p>
+    <button data-choice="NRA_AUT2_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   59: () => (
     <div>
       <h1>Recommendation page: 59</h1>
+      <div>
+  <div className="option" id="SM_NRA_SOC2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. </p>
+    <button data-choice="SM_NRA_SOC2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SOC2_SM">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Trusted by other students from your area. </p>
+    <button data-choice="NRA_SOC2_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   60: () => (
     <div>
       <h1>Recommendation page: 60</h1>
+      <div>
+  <div className="option" id="SM_NRA_LIK2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. </p>
+    <button data-choice="SM_NRA_LIK2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_LIK2_SM">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Recommended by your friend X. </p>
+    <button data-choice="NRA_LIK2_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   61: () => (
     <div>
       <h1>Recommendation page: 61</h1>
+      <div>
+  <div className="option" id="SM_NRA_SCA2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. </p>
+    <button data-choice="SM_NRA_SCA2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="NRA_SCA2_SM">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Available for a limited time. 5 out of 50 passes left only! </p>
+    <button data-choice="NRA_SCA2_SM" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   62: () => (
     <div>
       <h1>Recommendation page: 62</h1>
+      <div>
+  <div className="option" id="SM2_SR">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekA" /> program for <span id="fitnessGoal" />. </p>
+    <button data-choice="SM2_SR" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+  <div className="option" id="SR_SM2">
+    {/* Placeholder for recommendation details */}
+    <p><span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. ***** </p>
+    <button data-choice="SR_SM2" onclick="redirectToNextPage()">Choose this option</button>
+  </div>
+</div>
+
     </div>
   ),
   63: () => (
