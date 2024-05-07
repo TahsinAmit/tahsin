@@ -1,35 +1,19 @@
 import { useState } from 'react';
 import { useAppState } from '../state/state';
 import { SubmitHandler, useForm } from 'react-hook-form';
+import { HomePageProps } from '../@types';
 
-interface IFormInput {
-  ageGroup: string;
-  ethnicity: string;
-  customEthnicity: string;
-  gender: string;
-  customGender: string;
-  country: string;
-  education: string;
-  maritalStatus: string;
-  employment: string;
-  income: string;
-  householdSize: string;
-  homeOwnership: string;
-  bestFriend: string;
-  authorityFigure: string;
-  environmentalChoices: string;
-  medicationAck: boolean;
-  visionAck: boolean;
-}
+
 
 export default function Home() {
-  const { register, handleSubmit } = useForm<IFormInput>();
+  const { register, handleSubmit } = useForm<HomePageProps>();
   const setActivePage = useAppState((s) => s.setActivePage);
+  const setHomePageProps = useAppState((s) => s.setHomePageProps);
   const [customEthnicity, setCustomEthnicity] = useState(false);
   const [customGender, setCustomGender] = useState(false);
 
-  const onSubmit: SubmitHandler<IFormInput> = (data) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<HomePageProps> = (data) => {
+    setHomePageProps(data);
     setActivePage('instructions');
   };
   return (

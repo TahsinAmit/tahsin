@@ -1,9 +1,9 @@
-import { InstructionProps } from '../@types';
+import { HomePageProps, InstructionProps } from '../@types';
 import { useAppState } from '../state/state';
 import { useRandomPageRange } from '../utils';
 
 const recommendation = {
-  1: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  1: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 1</h1>
       <div className="option" id="RAT_REC1">
@@ -28,7 +28,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  2: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  2: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 2</h1>
       <div>
@@ -55,7 +55,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  3: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  3: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 3</h1>
       <div>
@@ -63,7 +63,7 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
-            {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.
+            {instructionValues.seatPreference} seat. Endorsed by your {homePageProps.authorityFigure}.
           </p>
           <button data-choice="RAT_AUT1" onClick={() => onClick('RAT_AUT1')}>
             Choose this option
@@ -73,7 +73,7 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} + 25 USD on an{' '}
-            {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.
+            {instructionValues.seatPreference} seat. Endorsed by your {homePageProps.authorityFigure}.
           </p>
           <button data-choice="NRA_AUT1" onClick={() => onClick('NRA_AUT1')}>
             Choose this option
@@ -82,7 +82,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  4: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  4: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 4</h1>
       <div>
@@ -109,7 +109,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  5: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  5: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 5</h1>
       <div>
@@ -136,7 +136,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  6: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  6: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 6</h1>
       <div>
@@ -163,7 +163,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  7: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  7: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 7</h1>
       <div>
@@ -190,7 +190,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  8: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  8: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 8</h1>
       <div>
@@ -217,7 +217,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  9: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  9: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 9</h1>
       <div>
@@ -235,7 +235,7 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
-            {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.
+            {instructionValues.seatPreference} seat. Endorsed by your {homePageProps.authorityFigure}.
           </p>
           <button data-choice="AUT1_SR" onClick={() => onClick('AUT1_SR')}>
             Choose this option
@@ -244,7 +244,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  10: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  10: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 10</h1>
       <div>
@@ -271,7 +271,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  11: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  11: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 11</h1>
       <div>
@@ -298,7 +298,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  12: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  12: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 12</h1>
       <div>
@@ -325,7 +325,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  13: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  13: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 13</h1>
       <div>
@@ -352,7 +352,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  14: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  14: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 14</h1>
       <div>
@@ -379,7 +379,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  15: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  15: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 15</h1>
       <div>
@@ -397,7 +397,7 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
-            {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.{' '}
+            {instructionValues.seatPreference} seat. Endorsed by your {homePageProps.authorityFigure}.{' '}
           </p>
           <button data-choice="NRA_AUT1_SR" onClick={() => onClick('NRA_AUT1_SR')}>
             Choose this option
@@ -406,7 +406,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  16: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  16: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 16</h1>
       <div>
@@ -433,7 +433,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  17: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  17: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 17</h1>
       <div>
@@ -460,7 +460,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  18: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  18: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 18</h1>
       <div>
@@ -487,7 +487,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  19: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  19: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 19</h1>
       <div>
@@ -514,7 +514,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  20: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  20: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 20</h1>
       <div>
@@ -541,7 +541,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  21: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  21: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 21</h1>
       <div>
@@ -559,7 +559,7 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
-            {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.{' '}
+            {instructionValues.seatPreference} seat. Endorsed by your {homePageProps.authorityFigure}.{' '}
           </p>
           <button data-choice="AUT1_SM" onClick={() => onClick('AUT1_SM')}>
             Choose this option
@@ -568,7 +568,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  22: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  22: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 22</h1>
       <div>
@@ -595,7 +595,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  23: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  23: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 23</h1>
       <div>
@@ -622,7 +622,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  24: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  24: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 24</h1>
       <div>
@@ -649,7 +649,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  25: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  25: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 25</h1>
       <div>
@@ -676,7 +676,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  26: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  26: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 26</h1>
       <div>
@@ -703,7 +703,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  27: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  27: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 27</h1>
       <div>
@@ -721,7 +721,7 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
-            {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.{' '}
+            {instructionValues.seatPreference} seat. Endorsed by your {homePageProps.authorityFigure}.{' '}
           </p>
           <button data-choice="NRA_AUT1_SM" onClick={() => onClick('NRA_AUT1_SM')}>
             Choose this option
@@ -730,7 +730,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  28: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  28: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 28</h1>
       <div>
@@ -757,7 +757,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  29: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  29: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 29</h1>
       <div>
@@ -784,7 +784,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  30: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  30: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 30</h1>
       <div>
@@ -811,7 +811,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  31: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  31: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 31</h1>
       <div>
@@ -838,7 +838,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  32: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  32: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 32</h1>
       <div id="recommendations" className="flex-container">
@@ -863,7 +863,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  33: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  33: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 33</h1>
       <div>
@@ -890,7 +890,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  34: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  34: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 34</h1>
       <div>
@@ -917,7 +917,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  35: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  35: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 35</h1>
       <div>
@@ -944,7 +944,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  36: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  36: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 36</h1>
       <div>
@@ -971,7 +971,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  37: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  37: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 37</h1>
       <div>
@@ -998,7 +998,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  38: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  38: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 38</h1>
       <div>
@@ -1023,7 +1023,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  39: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  39: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 39</h1>
       <div>
@@ -1049,7 +1049,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  40: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  40: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 40</h1>
       <div>
@@ -1075,7 +1075,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  41: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  41: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 41</h1>
       <div>
@@ -1101,7 +1101,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  42: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  42: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 42</h1>
       <div>
@@ -1127,7 +1127,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  43: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  43: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 43</h1>
       <div>
@@ -1153,7 +1153,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  44: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  44: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 44</h1>
       <div>
@@ -1178,7 +1178,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  45: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  45: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 45</h1>
       <div>
@@ -1204,7 +1204,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  46: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  46: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 46</h1>
       <div>
@@ -1230,7 +1230,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  47: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  47: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 47</h1>
       <div>
@@ -1256,7 +1256,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  48: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  48: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 48</h1>
       <div>
@@ -1282,7 +1282,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  49: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  49: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 49</h1>
       <div>
@@ -1308,7 +1308,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  50: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  50: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 50</h1>
       <div>
@@ -1333,7 +1333,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  51: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  51: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 51</h1>
       <div>
@@ -1359,7 +1359,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  52: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  52: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 52</h1>
       <div>
@@ -1385,7 +1385,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  53: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  53: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 53</h1>
       <div>
@@ -1411,7 +1411,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  54: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  54: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 54</h1>
       <div>
@@ -1437,7 +1437,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  55: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  55: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 55</h1>
       <div>
@@ -1463,7 +1463,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  56: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  56: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 56</h1>
       <div>
@@ -1488,7 +1488,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  57: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  57: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 57</h1>
       <div>
@@ -1514,7 +1514,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  58: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  58: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 58</h1>
       <div>
@@ -1540,7 +1540,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  59: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  59: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 59</h1>
       <div>
@@ -1566,7 +1566,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  60: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  60: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 60</h1>
       <div>
@@ -1592,7 +1592,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  61: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  61: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 61</h1>
       <div>
@@ -1618,7 +1618,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  62: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  62: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 62</h1>
       <div>
@@ -1643,7 +1643,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  63: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  63: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 63</h1>
       <div>
@@ -1670,7 +1670,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  64: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  64: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 64</h1>
       <div>
@@ -1697,7 +1697,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  65: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  65: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 65</h1>
       <div>
@@ -1724,7 +1724,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  66: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  66: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 66</h1>
       <div>
@@ -1751,7 +1751,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  67: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  67: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 67</h1>
       <div>
@@ -1778,7 +1778,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  68: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  68: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 68</h1>
       <div>
@@ -1805,7 +1805,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  69: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  69: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 69</h1>
       <div>
@@ -1832,7 +1832,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  70: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  70: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 70</h1>
       <div>
@@ -1859,7 +1859,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  71: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  71: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 71</h1>
       <div>
@@ -1886,7 +1886,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  72: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  72: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 72</h1>
       <div>
@@ -1913,7 +1913,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  73: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  73: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 73</h1>
       <div>
@@ -1940,7 +1940,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  74: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  74: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 74</h1>
       <div>
@@ -1967,7 +1967,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  75: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  75: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 75</h1>
       <div>
@@ -1994,7 +1994,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  76: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  76: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 76</h1>
       <div>
@@ -2021,7 +2021,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  77: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  77: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 77</h1>
       <div>
@@ -2048,7 +2048,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  78: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  78: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 78</h1>
       <div>
@@ -2075,7 +2075,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  79: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  79: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 79</h1>
       <div>
@@ -2102,7 +2102,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  80: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  80: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 80</h1>
       <div>
@@ -2129,7 +2129,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  81: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  81: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 81</h1>
       <div>
@@ -2156,7 +2156,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  82: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  82: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 82</h1>
       <div>
@@ -2183,7 +2183,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  83: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  83: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 83</h1>
       <div>
@@ -2210,7 +2210,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  84: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  84: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 84</h1>
       <div>
@@ -2237,7 +2237,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  85: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  85: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 85</h1>
       <div>
@@ -2264,7 +2264,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  86: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  86: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 86</h1>
       <div>
@@ -2291,7 +2291,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  87: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  87: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 87</h1>
       <div>
@@ -2318,7 +2318,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  88: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  88: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 88</h1>
       <div>
@@ -2345,7 +2345,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  89: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  89: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 89</h1>
       <div>
@@ -2372,7 +2372,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  90: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  90: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 90</h1>
       <div>
@@ -2399,7 +2399,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  91: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  91: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 91</h1>
       <div>
@@ -2426,7 +2426,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  92: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  92: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 92</h1>
       <div>
@@ -2453,7 +2453,7 @@ const recommendation = {
       </div>
     </div>
   ),
-  93: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
+  93: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
       <h1>Recommendation page: 93</h1>
       <div>
@@ -2485,6 +2485,7 @@ const recommendation = {
 export default function Recommendations() {
   const pages = useRandomPageRange();
   const setActivePage = useAppState((s) => s.setActivePage);
+  const homePageProps = useAppState((s) => s.homePageProps);
   const instructionValues = useAppState((s) => s.instructionValues);
   const activeRandomPageIndex = useAppState((s) => s.activeRandomPageIndex);
   const setRecommendationValues = useAppState((s) => s.setRecommendationValues);
@@ -2502,7 +2503,7 @@ export default function Recommendations() {
     <div>
       {pages[activeRandomPageIndex] && instructionValues &&
         // @ts-expect-error it will work
-        recommendation[pages[activeRandomPageIndex]]({ onClick: onNavigation, instructionValues })}
+        recommendation[pages[activeRandomPageIndex]]({ onClick: onNavigation, instructionValues, homePageProps })}
       {activeRandomPageIndex + 1 === pages.length && (
         <button type="submit" onClick={() => onNavigation(undefined, true)}>
           feedback page

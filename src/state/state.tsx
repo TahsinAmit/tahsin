@@ -4,7 +4,7 @@ import Instructions from '../components/Instructions';
 import Recommendations from '../components/Recommendations';
 import { randomNumber } from '../utils';
 import Feedback from '../components/Feedback';
-import { InstructionProps } from '../@types';
+import { HomePageProps, InstructionProps } from '../@types';
 
 function randomId(): string {
   const uint32 = window.crypto.getRandomValues(new Uint32Array(1))[0];
@@ -28,6 +28,8 @@ interface State {
   activeRandomPageIndex: number;
   setActiveRandomPageIndex: (activeRandomPageIndex: number) => void;
   recommendationValues: string[];
+  homePageProps?: HomePageProps;
+  setHomePageProps: (homePageProps: HomePageProps) => void
   instructionValues?: InstructionProps;
   setInstructionValues: (props: InstructionProps) => void;
   setRecommendationValues: (recommendationValue: string) => void;
@@ -51,5 +53,8 @@ export const useAppState = create<State>((set, state) => ({
   },
   setInstructionValues(instructionValues) {
     set({ instructionValues });
+  },
+  setHomePageProps(homePageProps) {
+    set({ homePageProps });
   },
 }));
