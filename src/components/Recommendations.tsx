@@ -117,7 +117,7 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
-            {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.
+            {instructionValues.seatPreference} seat. Also preferred by your friend {homePageProps.bestFriend}.
           </p>
           <button data-choice="RAT_LIK1" onClick={() => onClick('RAT_LIK1')}>
             Choose this option
@@ -127,7 +127,7 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} + 25 USD on an{' '}
-            {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.
+            {instructionValues.seatPreference} seat. Also preferred by your friend {homePageProps.bestFriend}.
           </p>
           <button data-choice="NRA_LIK1" onClick={() => onClick('NRA_LIK1')}>
             Choose this option
@@ -289,7 +289,7 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
-            {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.{' '}
+            {instructionValues.seatPreference} seat. Also preferred by your friend {homePageProps.bestFriend}.{' '}
           </p>
           <button data-choice="LIK1_SR" onClick={() => onClick('LIK1_SR')}>
             Choose this option
@@ -451,7 +451,7 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
-            {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.{' '}
+            {instructionValues.seatPreference} seat. Also preferred by your friend {homePageProps.bestFriend}.{' '}
           </p>
           <button data-choice="NRA_LIK1_SR" onClick={() => onClick('NRA_LIK1_SR')}>
             Choose this option
@@ -613,7 +613,7 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} on an{' '}
-            {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.{' '}
+            {instructionValues.seatPreference} seat. Also preferred by your friend {homePageProps.bestFriend}.{' '}
           </p>
           <button data-choice="LIK1_SM" onClick={() => onClick('LIK1_SM')}>
             Choose this option
@@ -775,7 +775,7 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
-            {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.{' '}
+            {instructionValues.seatPreference} seat. Also preferred by your friend {homePageProps.bestFriend}.{' '}
           </p>
           <button data-choice="NRA_LIK1_SM" onClick={() => onClick('NRA_LIK1_SM')}>
             Choose this option
@@ -1660,7 +1660,7 @@ const recommendation = {
         <div className="option" id="NRA_REC3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekB" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             Get complementary accesss to a live Q&A session.
           </p>
           <button data-choice="NRA_REC3" onClick={() => onClick('NRA_REC3')}>
@@ -1677,7 +1677,7 @@ const recommendation = {
         <div className="option" id="RAT_COM3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             This program allows you to reach your goal effectively.{' '}
           </p>
           <button data-choice="RAT_COM3" onClick={() => onClick('RAT_COM3')}>
@@ -1687,7 +1687,7 @@ const recommendation = {
         <div className="option" id="NRA_COM3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekB" />{' '}
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek}{' '}
             seat.This program allows you to reach your goal effectively.
           </p>
           <button data-choice="NRA_COM3" onClick={() => onClick('NRA_COM3')}>
@@ -1704,7 +1704,7 @@ const recommendation = {
         <div className="option" id="RAT_AUT3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             Recommended by Times Higher Education ranking.{' '}
           </p>
           <button data-choice="RAT_AUT3" onClick={() => onClick('RAT_AUT3')}>
@@ -1714,7 +1714,7 @@ const recommendation = {
         <div className="option" id="NRA_AUT3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekB" />{' '}
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek}{' '}
             seat.Recommended by Times Higher Education ranking.
           </p>
           <button data-choice="NRA_AUT3" onClick={() => onClick('NRA_AUT3')}>
@@ -1731,8 +1731,8 @@ const recommendation = {
         <div className="option" id="RAT_SOC3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" />{' '}
-            seat.People in your age group with a <span id="education" /> prefer this program.{' '}
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek}{' '}
+            seat.People in your age group with a {homePageProps.education} prefer this program.{' '}
           </p>
           <button data-choice="RAT_SOC3" onClick={() => onClick('RAT_SOC3')}>
             Choose this option
@@ -1741,8 +1741,8 @@ const recommendation = {
         <div className="option" id="NRA_SOC3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekB" />{' '}
-            seat.People in your age group with a <span id="education" /> prefer this program.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek}{' '}
+            seat.People in your age group with a {homePageProps.education} prefer this program.
           </p>
           <button data-choice="NRA_SOC3" onClick={() => onClick('NRA_SOC3')}>
             Choose this option
@@ -1758,8 +1758,8 @@ const recommendation = {
         <div className="option" id="RAT_LIK3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" />{' '}
-            seat.Rated highly by your friend <span id="bestFriend"> </span>{' '}
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek}{' '}
+            seat.Rated highly by your friend {homePageProps.bestFriend}{' '}
           </p>
           <button data-choice="RAT_LIK3" onClick={() => onClick('RAT_LIK3')}>
             Choose this option
@@ -1768,8 +1768,8 @@ const recommendation = {
         <div className="option" id="NRA_LIK3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekB" />{' '}
-            seat.Rated highly by your friend <span id="bestFriend"> </span>
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek}{' '}
+            seat.Rated highly by your friend {homePageProps.bestFriend}
           </p>
           <button data-choice="NRA_LIK3" onClick={() => onClick('NRA_LIK3')}>
             Choose this option
@@ -1785,7 +1785,7 @@ const recommendation = {
         <div className="option" id="RAT_SCA3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             Only 3 slots left, limited time offer!{' '}
           </p>
           <button data-choice="RAT_SCA3" onClick={() => onClick('RAT_SCA3')}>
@@ -1795,7 +1795,7 @@ const recommendation = {
         <div className="option" id="NRA_SCA3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekB" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             Only 3 slots left, limited time offer!
           </p>
           <button data-choice="NRA_SCA3" onClick={() => onClick('NRA_SCA3')}>
@@ -1812,7 +1812,7 @@ const recommendation = {
         <div className="option" id="SR_REC3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             *****{' '}
           </p>
           <button data-choice="SR_REC3" onClick={() => onClick('SR_REC3')}>
@@ -1822,7 +1822,7 @@ const recommendation = {
         <div className="option" id="REC3_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             Get complimentary access to a live Q&amp;A session.
           </p>
           <button data-choice="REC3_SR" onClick={() => onClick('REC3_SR')}>
@@ -1839,7 +1839,7 @@ const recommendation = {
         <div className="option" id="SR_COM3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             *****{' '}
           </p>
           <button data-choice="SR_COM3" onClick={() => onClick('SR_COM3')}>
@@ -1849,7 +1849,7 @@ const recommendation = {
         <div className="option" id="COM3_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             This program allows you to reach your goal effectively.
           </p>
           <button data-choice="COM3_SR" onClick={() => onClick('COM3_SR')}>
@@ -1866,7 +1866,7 @@ const recommendation = {
         <div className="option" id="SR_AUT3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             *****{' '}
           </p>
           <button data-choice="SR_AUT3" onClick={() => onClick('SR_AUT3')}>
@@ -1876,7 +1876,7 @@ const recommendation = {
         <div className="option" id="AUT3_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             Recommended by Times Higher Education ranking.
           </p>
           <button data-choice="AUT3_SR" onClick={() => onClick('AUT3_SR')}>
@@ -1893,7 +1893,7 @@ const recommendation = {
         <div className="option" id="SR_SOC3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             *****{' '}
           </p>
           <button data-choice="SR_SOC3" onClick={() => onClick('SR_SOC3')}>
@@ -1903,8 +1903,8 @@ const recommendation = {
         <div className="option" id="SOC3_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" />{' '}
-            seat.People in your age group with a <span id="education" /> prefer this program.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek}{' '}
+            seat.People in your age group with a {homePageProps.education} prefer this program.
           </p>
           <button data-choice="SOC3_SR" onClick={() => onClick('SOC3_SR')}>
             Choose this option
@@ -1920,7 +1920,7 @@ const recommendation = {
         <div className="option" id="SR_LIK3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             *****{' '}
           </p>
           <button data-choice="SR_LIK3" onClick={() => onClick('SR_LIK3')}>
@@ -1930,8 +1930,8 @@ const recommendation = {
         <div className="option" id="LIK3_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" />{' '}
-            seat.Rated highly by your friend <span id="bestFriend"> </span>
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek}{' '}
+            seat.Rated highly by your friend {homePageProps.bestFriend}
           </p>
           <button data-choice="LIK3_SR" onClick={() => onClick('LIK3_SR')}>
             Choose this option
@@ -1947,7 +1947,7 @@ const recommendation = {
         <div className="option" id="SR_SCA3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             *****{' '}
           </p>
           <button data-choice="SR_SCA3" onClick={() => onClick('SR_SCA3')}>
@@ -1957,7 +1957,7 @@ const recommendation = {
         <div className="option" id="SCA3_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn <span id="fieldOfStudyA" /> through <span id="learningMethodsA" /> , <span id="timePerWeekA" /> seat.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} seat.
             Only 3 slots left, limited time offer!
           </p>
           <button data-choice="SCA3_SR" onClick={() => onClick('SCA3_SR')}>
