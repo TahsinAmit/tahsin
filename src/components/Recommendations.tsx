@@ -1967,31 +1967,163 @@ const recommendation = {
   75: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
     <div>
       <h1>Recommendation page: 75</h1>
+      <div>
+        <div className="option" id="SR_NRA_REC3">
+          {/* Placeholder for recommendation details */}
+          <p>
+            Learn {instructionValues.sessionsPerWeek} through {instructionValues.learningMethods}, {instructionValues.timePerWeek}.{' '}
+            *****{' '}
+          </p>
+          <button data-choice="SR_NRA_REC3" onClick={() => onClick('SR_NRA_REC3')}>
+            Choose this option
+          </button>
+        </div>
+        <div className="option" id="NRA_REC3_SR">
+          {/* Placeholder for recommendation details */}
+          <p>
+            Learn {instructionValues.learningGoal} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek}. Get complimentary access to a live Q&A session.
+          </p>
+          <button data-choice="NRA_REC3_SR" onClick={() => onClick('NRA_REC3_SR')}>
+            Choose this option
+          </button>
+        </div>
+      </div>
     </div>
   ),
   76: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
     <div>
       <h1>Recommendation page: 76</h1>
+      <div>
+        <div className="option" id="SR_NRA_COM3">
+          {/* Placeholder for recommendation details */}
+          <p>
+            Learn {instructionValues.sessionsPerWeek} through {instructionValues.learningMethods},{' '}
+            {instructionValues.timePerWeek}. *****{' '}
+          </p>
+          <button data-choice="SR_NRA_COM3" onClick={() => onClick('SR_NRA_COM3')}>
+            Choose this option
+          </button>
+        </div>
+        <div className="option" id="NRA_COM3_SR">
+          {/* Placeholder for recommendation details */}
+          <p>
+            Learn {instructionValues.learningGoal} through {instructionValues.learningMethods} ,
+            {instructionValues.timePerWeek}. This program allows you to reach your goal effectively.{' '}
+          </p>
+          <button data-choice="NRA_COM3_SR" onClick={() => onClick('NRA_COM3_SR')}>
+            Choose this option
+          </button>
+        </div>
+      </div>
     </div>
   ),
   77: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
     <div>
       <h1>Recommendation page: 77</h1>
+      <div>
+        <div className="option" id="SR_NRA_AUT3">
+          {/* Placeholder for recommendation details */}
+          <p>
+            Learn {instructionValues.sessionsPerWeek} through {instructionValues.learningMethods},{' '}
+            {instructionValues.timePerWeek}. *****{' '}
+          </p>
+          <button data-choice="SR_NRA_AUT3" onClick={() => onClick('SR_NRA_AUT3')}>
+            Choose this option
+          </button>
+        </div>
+        <div className="option" id="NRA_AUT3_SR">
+          {/* Placeholder for recommendation details */}
+          <p>
+            Learn {instructionValues.learningGoal} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek}. Recommended by Times Higher Education ranking.
+          </p>
+          <button data-choice="NRA_AUT3_SR" onClick={() => onClick('NRA_AUT3_SR')}>
+            Choose this option
+          </button>
+        </div>
+      </div>
     </div>
   ),
   78: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
     <div>
       <h1>Recommendation page: 78</h1>
+      <div>
+        <div className="option" id="SR_NRA_SOC3">
+          {/* Placeholder for recommendation details */}
+          <p>
+            Learn {instructionValues.sessionsPerWeek} through {instructionValues.learningMethods},{' '}
+            {instructionValues.timePerWeek}. *****{' '}
+          </p>
+          <button data-choice="SR_NRA_SOC3" onClick={() => onClick('SR_NRA_SOC3')}>
+            Choose this option
+          </button>
+        </div>
+        <div className="option" id="NRA_SOC3_SR">
+          {/* Placeholder for recommendation details */}
+          <p>
+            Learn {instructionValues.learningGoal} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek}. People in your age group with a degree prefer this program.
+          </p>
+          <button data-choice="NRA_SOC3_SR" onClick={() => onClick('NRA_SOC3_SR')}>
+            Choose this option
+          </button>
+        </div>
+      </div>
     </div>
   ),
   79: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
     <div>
       <h1>Recommendation page: 79</h1>
+      <div>
+        <div className="option" id="SR_NRA_LIK3">
+          {/* Placeholder for recommendation details */}
+          <p>
+            Learn {instructionValues.sessionsPerWeek} through {instructionValues.learningMethods},{' '}
+            {instructionValues.timePerWeek}. *****{' '}
+          </p>
+          <button data-choice="SR_NRA_LIK3" onClick={() => onClick('SR_NRA_LIK3')}>
+            Choose this option
+          </button>
+        </div>
+        <div className="option" id="NRA_LIK3_SR">
+          {/* Placeholder for recommendation details */}
+          <p>
+            Learn {instructionValues.learningGoal} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek}. Rated highly by your friend.
+          </p>
+          <button data-choice="NRA_LIK3_SR" onClick={() => onClick('NRA_LIK3_SR')}>
+            Choose this option
+          </button>
+        </div>
+      </div>
     </div>
   ),
   80: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
     <div>
       <h1>Recommendation page: 80</h1>
+      <div>
+        <div className="option" id="SR_NRA_SCA3">
+          {/* Placeholder for recommendation details */}
+          <p>
+            Learn {instructionValues.sessionsPerWeek} through {instructionValues.learningMethods},{' '}
+            {instructionValues.timePerWeek}. *****{' '}
+          </p>
+          <button data-choice="SR_NRA_SCA3" onClick={() => onClick('SR_NRA_SCA3')}>
+            Choose this option
+          </button>
+        </div>
+        <div className="option" id="NRA_SCA3_SR">
+          {/* Placeholder for recommendation details */}
+          <p>
+            Learn {instructionValues.learningGoal} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek}. Only 3 slots left, limited time offer!
+          </p>
+          <button data-choice="NRA_SCA3_SR" onClick={() => onClick('NRA_SCA3_SR')}>
+            Choose this option
+          </button>
+        </div>
+      </div>
     </div>
   ),
   81: ({ onClick, instructionValues }: { onClick: (val: string) => void; instructionValues: InstructionProps }) => (
