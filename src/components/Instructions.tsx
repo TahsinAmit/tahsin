@@ -15,6 +15,7 @@ const instruction = {
 
     return (
       <div>
+        <h2>Instruction page 1</h2>
         <h2>Welcome to RSAI, your AI-powered recommender system</h2>
         <p>
           Our goal is to simplify your travel planning process by providing personalized flight suggestions that cater
@@ -70,14 +71,16 @@ const instruction = {
   },
   2: () => {
     const { register, handleSubmit } = useForm<InstructionProps>();
+    const setInstructionValues = useAppState((s) => s.setInstructionValues);
     const setActivePage = useAppState((s) => s.setActivePage);
     const onSubmit: SubmitHandler<InstructionProps> = (data) => {
-      console.log(data);
+      setInstructionValues(data);
       setActivePage('recommendations');
     };
 
     return (
       <div>
+        <h2>Instruction page 2</h2>
         <h2>Welcome to RSAI, your AI-powered recommender system</h2>
         <p>
           Our goal is to simplify your fitness planning process by providing personalized workout suggestions that cater
@@ -129,14 +132,16 @@ const instruction = {
   },
   3: () => {
     const { register, handleSubmit } = useForm<InstructionProps>();
+    const setInstructionValues = useAppState((s) => s.setInstructionValues);
     const setActivePage = useAppState((s) => s.setActivePage);
     const onSubmit: SubmitHandler<InstructionProps> = (data) => {
-      console.log(data);
+      setInstructionValues(data);
       setActivePage('recommendations');
     };
 
     return (
       <div>
+        <h2>Instruction page 3</h2>
         <h2>Welcome to RSAI, your AI-powered recommender system</h2>
         <p>
           Our goal is to simplify your travel planning process by providing personalized flight suggestions that cater

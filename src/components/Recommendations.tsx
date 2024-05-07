@@ -2493,14 +2493,14 @@ export default function Recommendations() {
   const onNavigation = (recommendationValue: string | undefined, toFeedback = false) => {
     if (toFeedback) {
       setActivePage('feedback');
-    } else {
-      if (recommendationValue) setRecommendationValues(recommendationValue);
+    } else if (recommendationValue) {
+      setRecommendationValues(recommendationValue);
       setActiveRandomPageIndex(activeRandomPageIndex + 1);
     }
   };
   return (
     <div>
-      {pages[activeRandomPageIndex] &&
+      {pages[activeRandomPageIndex] && instructionValues &&
         // @ts-expect-error it will work
         recommendation[pages[activeRandomPageIndex]]({ onClick: onNavigation, instructionValues })}
       {activeRandomPageIndex + 1 === pages.length && (
