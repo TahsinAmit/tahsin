@@ -19,7 +19,7 @@ const recommendation = {
       <div className="option" id="NRA_REC1">
         {/* Placeholder for recommendation details */}
         <p>
-          Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+          Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
           {instructionValues.seatPreference} seat. Enjoy a complementary drink.
         </p>
         <button data-choice="NRA_REC1" onClick={() => onClick('NRA_REC1')}>
@@ -45,7 +45,7 @@ const recommendation = {
         <div className="option" id="NRA_COM1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} + 25 USD on an{' '}
             {instructionValues.seatPreference} seat. Stay committed to your green goals.
           </p>
           <button data-choice="NRA_COM1" onClick={() => onClick('NRA_COM1')}>
@@ -72,7 +72,7 @@ const recommendation = {
         <div className="option" id="NRA_AUT1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} + 25 USD on an{' '}
             {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.
           </p>
           <button data-choice="NRA_AUT1" onClick={() => onClick('NRA_AUT1')}>
@@ -99,7 +99,7 @@ const recommendation = {
         <div className="option" id="NRA_SOC1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
             {instructionValues.seatPreference} seat. Highly rated by people in the same income level groups as you.
           </p>
           <button data-choice="NRA_SOC1" onClick={() => onClick('NRA_SOC1')}>
@@ -126,7 +126,7 @@ const recommendation = {
         <div className="option" id="NRA_LIK1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} + 25 USD on an{' '}
             {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.
           </p>
           <button data-choice="NRA_LIK1" onClick={() => onClick('NRA_LIK1')}>
@@ -153,7 +153,7 @@ const recommendation = {
         <div className="option" id="NRA_SCA1">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
             {instructionValues.seatPreference} seat. Exclusive offer ending soon. We only have 3 seats left!
           </p>
           <button data-choice="NRA_SCA1" onClick={() => onClick('NRA_SCA1')}>
@@ -342,7 +342,7 @@ const recommendation = {
         <div className="option" id="NRA_REC1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
             {instructionValues.seatPreference} seat. Enjoy a complementary drink.{' '}
           </p>
           <button data-choice="NRA_REC1_SR" onClick={() => onClick('NRA_REC1_SR')}>
@@ -369,7 +369,7 @@ const recommendation = {
         <div className="option" id="NRA_COM1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
             {instructionValues.seatPreference} seat. Stay committed to your green goals.{' '}
           </p>
           <button data-choice="NRA_COM1_SR" onClick={() => onClick('NRA_COM1_SR')}>
@@ -396,7 +396,7 @@ const recommendation = {
         <div className="option" id="NRA_AUT1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
             {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.{' '}
           </p>
           <button data-choice="NRA_AUT1_SR" onClick={() => onClick('NRA_AUT1_SR')}>
@@ -423,7 +423,7 @@ const recommendation = {
         <div className="option" id="NRA_SOC1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
             {instructionValues.seatPreference} seat. Highly rated by people in the same income level groups as you.{' '}
           </p>
           <button data-choice="NRA_SOC1_SR" onClick={() => onClick('NRA_SOC1_SR')}>
@@ -450,7 +450,7 @@ const recommendation = {
         <div className="option" id="NRA_LIK1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
             {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.{' '}
           </p>
           <button data-choice="NRA_LIK1_SR" onClick={() => onClick('NRA_LIK1_SR')}>
@@ -477,7 +477,7 @@ const recommendation = {
         <div className="option" id="NRA_SCA1_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
             {instructionValues.seatPreference} seat. Exclusive offer ending soon. We only have 3 seats left!{' '}
           </p>
           <button data-choice="NRA_SCA1_SR" onClick={() => onClick('NRA_SCA1_SR')}>
@@ -666,7 +666,7 @@ const recommendation = {
         <div className="option" id="NRA_REC1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
             {instructionValues.seatPreference} seat. Enjoy a complementary drink.{' '}
           </p>
           <button data-choice="NRA_REC1_SM" onClick={() => onClick('NRA_REC1_SM')}>
@@ -693,7 +693,7 @@ const recommendation = {
         <div className="option" id="NRA_COM1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
             {instructionValues.seatPreference} seat. Stay committed to your green choice.{' '}
           </p>
           <button data-choice="NRA_COM1_SM" onClick={() => onClick('NRA_COM1_SM')}>
@@ -720,7 +720,7 @@ const recommendation = {
         <div className="option" id="NRA_AUT1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
             {instructionValues.seatPreference} seat. Endorsed by your <span id="authorityFigureOutput" />.{' '}
           </p>
           <button data-choice="NRA_AUT1_SM" onClick={() => onClick('NRA_AUT1_SM')}>
@@ -747,7 +747,7 @@ const recommendation = {
         <div className="option" id="NRA_SOC1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
             {instructionValues.seatPreference} seat. Highly rated by people in the same income level groups as you.{' '}
           </p>
           <button data-choice="NRA_SOC1_SM" onClick={() => onClick('NRA_SOC1_SM')}>
@@ -774,7 +774,7 @@ const recommendation = {
         <div className="option" id="NRA_LIK1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
             {instructionValues.seatPreference} seat. Also preferred by your friend <span id="bestFriendOutput" />.{' '}
           </p>
           <button data-choice="NRA_LIK1_SM" onClick={() => onClick('NRA_LIK1_SM')}>
@@ -801,7 +801,7 @@ const recommendation = {
         <div className="option" id="NRA_SCA1_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget} USD on an{' '}
+            Direct flight to {instructionValues.preferredDestination} for {instructionValues.budget + 25} USD on an{' '}
             {instructionValues.seatPreference} seat. Exclusive offer ending soon. We only have 3 seats left!{' '}
           </p>
           <button data-choice="NRA_SCA1_SM" onClick={() => onClick('NRA_SCA1_SM')}>
@@ -854,7 +854,7 @@ const recommendation = {
         <div className="option" id="NRA_REC2">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Get a free nutrition guide.
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. Get a free nutrition guide.
           </p>
           <button data-choice="NRA_REC2" onClick={() => onClick('NRA_REC2')}>
             Choose this option
@@ -880,8 +880,8 @@ const recommendation = {
         <div className="option" id="NRA_COM2">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. This plan allows to reach your fitness
-            goal effectively.
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. This plan allows to reach
+            your fitness goal effectively.
           </p>
           <button data-choice="NRA_COM2" onClick={() => onClick('NRA_COM2')}>
             Choose this option
@@ -907,7 +907,7 @@ const recommendation = {
         <div className="option" id="NRA_AUT2">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. This program is compliant with your
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. This program is compliant
             health insurance provider.
           </p>
           <button data-choice="NRA_AUT2" onClick={() => onClick('NRA_AUT2')}>
@@ -934,7 +934,7 @@ const recommendation = {
         <div className="option" id="NRA_SOC2">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Trusted by other students from your
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. Trusted by other students
             area.
           </p>
           <button data-choice="NRA_SOC2" onClick={() => onClick('NRA_SOC2')}>
@@ -961,7 +961,8 @@ const recommendation = {
         <div className="option" id="NRA_LIK2">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Recommended by your friend X.
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. Recommended by your friend
+            X.
           </p>
           <button data-choice="NRA_LIK2" onClick={() => onClick('NRA_LIK2')}>
             Choose this option
@@ -987,8 +988,8 @@ const recommendation = {
         <div className="option" id="NRA_SCA2">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Available for a limited time. 5 out of
-            50 passes left only!{' '}
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. Available for a limited
+            time. 5 out of 50 passes left only!{' '}
           </p>
           <button data-choice="NRA_SCA2" onClick={() => onClick('NRA_SCA2')}>
             Choose this option
@@ -1168,7 +1169,7 @@ const recommendation = {
         <div className="option" id="NRA_REC2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Get a free nutrition guide.{' '}
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. Get a free nutrition guide.{' '}
           </p>
           <button data-choice="NRA_REC2_SR" onClick={() => onClick('NRA_REC2_SR')}>
             Choose this option
@@ -1193,8 +1194,8 @@ const recommendation = {
         <div className="option" id="NRA_COM2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. This plan allows to reach your fitness
-            goal effectively.{' '}
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. This plan allows to reach
+            your fitness goal effectively.{' '}
           </p>
           <button data-choice="NRA_COM2_SR" onClick={() => onClick('NRA_COM2_SR')}>
             Choose this option
@@ -1219,7 +1220,7 @@ const recommendation = {
         <div className="option" id="NRA_AUT2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. This program is compliant with your
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. This program is compliant
             health insurance provider.{' '}
           </p>
           <button data-choice="NRA_AUT2_SR" onClick={() => onClick('NRA_AUT2_SR')}>
@@ -1245,7 +1246,7 @@ const recommendation = {
         <div className="option" id="NRA_SOC2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Trusted by other students from your
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. Trusted by other students
             area.{' '}
           </p>
           <button data-choice="NRA_SOC2_SR" onClick={() => onClick('NRA_SOC2_SR')}>
@@ -1271,7 +1272,8 @@ const recommendation = {
         <div className="option" id="NRA_LIK2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Recommended by your friend X.{' '}
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. Recommended by your friend
+            X.{' '}
           </p>
           <button data-choice="NRA_LIK2_SR" onClick={() => onClick('NRA_LIK2_SR')}>
             Choose this option
@@ -1296,8 +1298,8 @@ const recommendation = {
         <div className="option" id="NRA_SCA2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Available for a limited time. 5 out of
-            50 passes left only!{' '}
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. Available for a limited
+            time. 5 out of 50 passes left only!{' '}
           </p>
           <button data-choice="NRA_SCA2_SR" onClick={() => onClick('NRA_SCA2_SR')}>
             Choose this option
@@ -1477,7 +1479,7 @@ const recommendation = {
         <div className="option" id="NRA_REC2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Get a free nutrition guide.
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. Get a free nutrition guide.
           </p>
           <button data-choice="NRA_REC2_SM" onClick={() => onClick('NRA_REC2_SM')}>
             Choose this option
@@ -1502,8 +1504,8 @@ const recommendation = {
         <div className="option" id="NRA_COM2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. This plan allows to reach your fitness
-            goal effectively.
+            {instructionValues.sessionsPerWeek}program for {instructionValues.fitnessGoal}. This plan allows to reach
+            your fitness goal effectively.
           </p>
           <button data-choice="NRA_COM2_SM" onClick={() => onClick('NRA_COM2_SM')}>
             Choose this option
@@ -1528,7 +1530,7 @@ const recommendation = {
         <div className="option" id="NRA_AUT2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. This program is compliant with your
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. This program is compliant
             health insurance provider.
           </p>
           <button data-choice="NRA_AUT2_SM" onClick={() => onClick('NRA_AUT2_SM')}>
@@ -1554,7 +1556,7 @@ const recommendation = {
         <div className="option" id="NRA_SOC2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Trusted by other students from your
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. Trusted by other students
             area.{' '}
           </p>
           <button data-choice="NRA_SOC2_SM" onClick={() => onClick('NRA_SOC2_SM')}>
@@ -1580,7 +1582,8 @@ const recommendation = {
         <div className="option" id="NRA_LIK2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Recommended by your friend X.{' '}
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. Recommended by your friend
+            X.{' '}
           </p>
           <button data-choice="NRA_LIK2_SM" onClick={() => onClick('NRA_LIK2_SM')}>
             Choose this option
@@ -1605,8 +1608,8 @@ const recommendation = {
         <div className="option" id="NRA_SCA2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. Available for a limited time. 5 out of
-            50 passes left only!{' '}
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. Available for a limited
+            time. 5 out of 50 passes left only!{' '}
           </p>
           <button data-choice="NRA_SCA2_SM" onClick={() => onClick('NRA_SCA2_SM')}>
             Choose this option
@@ -1631,7 +1634,7 @@ const recommendation = {
         <div className="option" id="SR_SM2">
           {/* Placeholder for recommendation details */}
           <p>
-            <span id="sessionsPerWeekB" /> program for <span id="fitnessGoal" />. *****{' '}
+            {instructionValues.sessionsPerWeek} program for {instructionValues.fitnessGoal}. *****{' '}
           </p>
           <button data-choice="SR_SM2" onClick={() => onClick('SR_SM2')}>
             Choose this option
