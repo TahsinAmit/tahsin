@@ -5,10 +5,10 @@ export interface InstructionProps {
   seatPreference: string;
   fitnessGoal: string;
   timePerSession: string;
-  sessionsPerWeek: string;
+  sessionsPerWeek: number;
   learningGoal: string;
   learningMethods: string;
-  timePerWeek: string;
+  timePerWeek: number;
   fieldOfStudy: string;
 }
 

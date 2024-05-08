@@ -120,9 +120,9 @@ const instruction = {
           <br />
           <select id="sessionsPerWeek" {...register('sessionsPerWeek', { required: true })}>
             <option value="">Select</option>
-            <option value="3 days">3 days</option>
-            <option value="4 days">4 days</option>
-            <option value="5 days">5 days</option>
+            <option value={3}>3 days</option>
+            <option value={4}>4 days</option>
+            <option value={4}>5 days</option>
           </select>
 
           <input type="submit" value="Click here to see AI generated recommendation"></input>
@@ -181,9 +181,9 @@ const instruction = {
           <br />
           <select id="timePerWeek" {...register('timePerWeek', { required: true })}>
             <option value="">Select</option>
-            <option value="2 hours">2 hours</option>
-            <option value="5 hours">5 hours</option>
-            <option value="10 hours">10 hours</option>
+            <option value={2}>2 hours</option>
+            <option value={5}>5 hours</option>
+            <option value={10}>10 hours</option>
           </select>
 
           <br />
