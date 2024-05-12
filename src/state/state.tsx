@@ -29,7 +29,7 @@ interface State {
   setActiveRandomPageIndex: (activeRandomPageIndex: number) => void;
   recommendationValues: { value: string; timeTaken: number }[];
   homePageProps?: HomePageProps;
-  setHomePageProps: (homePageProps: HomePageProps) => void
+  setHomePageProps: (homePageProps: HomePageProps) => void;
   instructionValues?: InstructionProps;
   setInstructionValues: (props: InstructionProps) => void;
   setRecommendationValues: (props: { value: string; timeTaken: number }) => void;

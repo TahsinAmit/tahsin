@@ -4,20 +4,28 @@ import { useAppState } from '../state/state';
 import { useRandomPageRange } from '../utils';
 
 function useOnPageLoadTime() {
-  const [pageTimer, setPageTimer] = useState(0)
+  const [pageTimer, setPageTimer] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
-      setPageTimer(pageTimer + 1)
-    }, 1000)
+      setPageTimer(pageTimer + 1);
+    }, 1000);
     return () => {
-      clearInterval(interval)
-    }
-  }, [])
-  return pageTimer
+      clearInterval(interval);
+    };
+  }, []);
+  return pageTimer;
 }
 
 const recommendation = {
-  1: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  1: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 1</h1>
       <div className="option" id="RAT_REC1">
@@ -42,7 +50,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  2: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  2: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 2</h1>
       <div>
@@ -69,7 +85,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  3: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  3: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 3</h1>
       <div>
@@ -96,7 +120,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  4: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  4: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 4</h1>
       <div>
@@ -123,7 +155,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  5: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  5: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 5</h1>
       <div>
@@ -150,7 +190,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  6: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  6: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 6</h1>
       <div>
@@ -177,7 +225,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  7: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  7: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 7</h1>
       <div>
@@ -204,7 +260,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  8: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  8: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 8</h1>
       <div>
@@ -231,7 +295,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  9: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  9: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 9</h1>
       <div>
@@ -258,7 +330,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  10: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  10: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 10</h1>
       <div>
@@ -285,7 +365,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  11: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  11: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 11</h1>
       <div>
@@ -312,7 +400,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  12: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  12: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 12</h1>
       <div>
@@ -339,7 +435,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  13: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  13: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 13</h1>
       <div>
@@ -366,7 +470,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  14: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  14: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 14</h1>
       <div>
@@ -393,7 +505,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  15: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  15: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 15</h1>
       <div>
@@ -420,7 +540,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  16: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  16: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 16</h1>
       <div>
@@ -447,7 +575,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  17: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  17: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 17</h1>
       <div>
@@ -474,7 +610,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  18: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  18: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 18</h1>
       <div>
@@ -501,7 +645,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  19: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  19: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 19</h1>
       <div>
@@ -528,7 +680,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  20: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  20: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 20</h1>
       <div>
@@ -555,7 +715,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  21: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  21: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 21</h1>
       <div>
@@ -582,7 +750,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  22: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  22: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 22</h1>
       <div>
@@ -609,7 +785,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  23: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  23: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 23</h1>
       <div>
@@ -636,7 +820,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  24: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  24: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 24</h1>
       <div>
@@ -663,7 +855,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  25: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  25: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 25</h1>
       <div>
@@ -690,7 +890,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  26: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  26: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 26</h1>
       <div>
@@ -717,7 +925,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  27: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  27: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 27</h1>
       <div>
@@ -744,7 +960,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  28: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  28: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 28</h1>
       <div>
@@ -771,7 +995,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  29: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  29: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 29</h1>
       <div>
@@ -798,7 +1030,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  30: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  30: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 30</h1>
       <div>
@@ -825,7 +1065,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  31: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  31: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 31</h1>
       <div>
@@ -852,14 +1100,23 @@ const recommendation = {
       </div>
     </div>
   ),
-  32: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  32: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 32</h1>
       <div id="recommendations" className="flex-container">
         <div className="option" id="RAT_REC2">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Get a free nutrition guide.
+            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Get a free
+            nutrition guide.
           </p>
           <button data-choice="RAT_REC2" onClick={() => onClick('RAT_REC2')}>
             Choose this option
@@ -868,7 +1125,8 @@ const recommendation = {
         <div className="option" id="NRA_REC2">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Get a free nutrition guide.
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Get a free
+            nutrition guide.
           </p>
           <button data-choice="NRA_REC2" onClick={() => onClick('NRA_REC2')}>
             Choose this option
@@ -877,15 +1135,23 @@ const recommendation = {
       </div>
     </div>
   ),
-  33: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  33: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 33</h1>
       <div>
         <div className="option" id="RAT_COM2">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. This plan allows to reach
-            your fitness goal effectively.
+            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. This plan
+            allows to reach your fitness goal effectively.
           </p>
           <button data-choice="RAT_COM2" onClick={() => onClick('RAT_COM2')}>
             Choose this option
@@ -894,8 +1160,8 @@ const recommendation = {
         <div className="option" id="NRA_COM2">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. This plan allows to reach
-            your fitness goal effectively.
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. This plan
+            allows to reach your fitness goal effectively.
           </p>
           <button data-choice="NRA_COM2" onClick={() => onClick('NRA_COM2')}>
             Choose this option
@@ -904,7 +1170,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  34: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  34: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 34</h1>
       <div>
@@ -921,8 +1195,8 @@ const recommendation = {
         <div className="option" id="NRA_AUT2">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. This program is
-            compliant with health insurance provider.
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. This
+            program is compliant with health insurance provider.
           </p>
           <button data-choice="NRA_AUT2" onClick={() => onClick('NRA_AUT2')}>
             Choose this option
@@ -931,7 +1205,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  35: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  35: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 35</h1>
       <div>
@@ -948,8 +1230,8 @@ const recommendation = {
         <div className="option" id="NRA_SOC2">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Trusted by other students
-            area.
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Trusted by
+            other students area.
           </p>
           <button data-choice="NRA_SOC2" onClick={() => onClick('NRA_SOC2')}>
             Choose this option
@@ -958,7 +1240,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  36: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  36: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 36</h1>
       <div>
@@ -975,7 +1265,8 @@ const recommendation = {
         <div className="option" id="NRA_LIK2">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Recommended by your friend
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Recommended
+            by your friend
             {homePageProps.bestFriend}.
           </p>
           <button data-choice="NRA_LIK2" onClick={() => onClick('NRA_LIK2')}>
@@ -985,7 +1276,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  37: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  37: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 37</h1>
       <div>
@@ -1002,8 +1301,8 @@ const recommendation = {
         <div className="option" id="NRA_SCA2">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Available for a limited
-            time. 5 out of 50 passes left only!{' '}
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Available
+            for a limited time. 5 out of 50 passes left only!{' '}
           </p>
           <button data-choice="NRA_SCA2" onClick={() => onClick('NRA_SCA2')}>
             Choose this option
@@ -1012,7 +1311,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  38: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  38: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 38</h1>
       <div>
@@ -1028,7 +1335,8 @@ const recommendation = {
         <div className="option" id="REC2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Get a free nutrition guide.{' '}
+            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Get a free
+            nutrition guide.{' '}
           </p>
           <button data-choice="REC2_SR" onClick={() => onClick('REC2_SR')}>
             Choose this option
@@ -1037,7 +1345,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  39: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  39: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 39</h1>
       <div>
@@ -1053,8 +1369,8 @@ const recommendation = {
         <div className="option" id="COM2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. This plan allows to reach
-            your fitness goal effectively.{' '}
+            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. This plan
+            allows to reach your fitness goal effectively.{' '}
           </p>
           <button data-choice="COM2_SR" onClick={() => onClick('COM2_SR')}>
             Choose this option
@@ -1063,7 +1379,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  40: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  40: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 40</h1>
       <div>
@@ -1079,8 +1403,8 @@ const recommendation = {
         <div className="option" id="AUT2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. This program is compliant
-            with your health insurance provider.{' '}
+            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. This program is
+            compliant with your health insurance provider.{' '}
           </p>
           <button data-choice="AUT2_SR" onClick={() => onClick('AUT2_SR')}>
             Choose this option
@@ -1089,7 +1413,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  41: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  41: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 41</h1>
       <div>
@@ -1105,8 +1437,8 @@ const recommendation = {
         <div className="option" id="SOC2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Trusted by other students
-            from your area.{' '}
+            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Trusted by
+            other students from your area.{' '}
           </p>
           <button data-choice="SOC2_SR" onClick={() => onClick('SOC2_SR')}>
             Choose this option
@@ -1115,7 +1447,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  42: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  42: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 42</h1>
       <div>
@@ -1131,7 +1471,8 @@ const recommendation = {
         <div className="option" id="LIK2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Recommended by your friend
+            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Recommended by
+            your friend
             {homePageProps.bestFriend}.{' '}
           </p>
           <button data-choice="LIK2_SR" onClick={() => onClick('LIK2_SR')}>
@@ -1141,7 +1482,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  43: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  43: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 43</h1>
       <div>
@@ -1157,8 +1506,8 @@ const recommendation = {
         <div className="option" id="SCA2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Available for a limited
-            time. 5 out of 50 passes left only!{' '}
+            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Available for a
+            limited time. 5 out of 50 passes left only!{' '}
           </p>
           <button data-choice="SCA2_SR" onClick={() => onClick('SCA2_SR')}>
             Choose this option
@@ -1167,7 +1516,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  44: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  44: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 44</h1>
       <div>
@@ -1183,7 +1540,8 @@ const recommendation = {
         <div className="option" id="NRA_REC2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Get a free nutrition guide.{' '}
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Get a free
+            nutrition guide.{' '}
           </p>
           <button data-choice="NRA_REC2_SR" onClick={() => onClick('NRA_REC2_SR')}>
             Choose this option
@@ -1192,7 +1550,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  45: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  45: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 45</h1>
       <div>
@@ -1208,8 +1574,8 @@ const recommendation = {
         <div className="option" id="NRA_COM2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. This plan allows to reach
-            your fitness goal effectively.{' '}
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. This plan
+            allows to reach your fitness goal effectively.{' '}
           </p>
           <button data-choice="NRA_COM2_SR" onClick={() => onClick('NRA_COM2_SR')}>
             Choose this option
@@ -1218,7 +1584,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  46: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  46: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 46</h1>
       <div>
@@ -1234,8 +1608,8 @@ const recommendation = {
         <div className="option" id="NRA_AUT2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. This program is compliant
-            health insurance provider.{' '}
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. This
+            program is compliant health insurance provider.{' '}
           </p>
           <button data-choice="NRA_AUT2_SR" onClick={() => onClick('NRA_AUT2_SR')}>
             Choose this option
@@ -1244,7 +1618,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  47: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  47: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 47</h1>
       <div>
@@ -1260,8 +1642,8 @@ const recommendation = {
         <div className="option" id="NRA_SOC2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Trusted by other students
-            area.{' '}
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Trusted by
+            other students area.{' '}
           </p>
           <button data-choice="NRA_SOC2_SR" onClick={() => onClick('NRA_SOC2_SR')}>
             Choose this option
@@ -1270,7 +1652,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  48: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  48: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 48</h1>
       <div>
@@ -1286,7 +1676,8 @@ const recommendation = {
         <div className="option" id="NRA_LIK2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Recommended by your friend
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Recommended
+            by your friend
             {homePageProps.bestFriend}.{' '}
           </p>
           <button data-choice="NRA_LIK2_SR" onClick={() => onClick('NRA_LIK2_SR')}>
@@ -1296,7 +1687,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  49: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  49: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 49</h1>
       <div>
@@ -1312,8 +1711,8 @@ const recommendation = {
         <div className="option" id="NRA_SCA2_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Available for a limited
-            time. 5 out of 50 passes left only!{' '}
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Available
+            for a limited time. 5 out of 50 passes left only!{' '}
           </p>
           <button data-choice="NRA_SCA2_SR" onClick={() => onClick('NRA_SCA2_SR')}>
             Choose this option
@@ -1322,7 +1721,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  50: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  50: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 50</h1>
       <div>
@@ -1338,7 +1745,8 @@ const recommendation = {
         <div className="option" id="REC2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Get a free nutrition guide.{' '}
+            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Get a free
+            nutrition guide.{' '}
           </p>
           <button data-choice="REC2_SM" onClick={() => onClick('REC2_SM')}>
             Choose this option
@@ -1347,7 +1755,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  51: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  51: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 51</h1>
       <div>
@@ -1363,8 +1779,8 @@ const recommendation = {
         <div className="option" id="COM2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. This plan allows to reach
-            your fitness goal effectively.{' '}
+            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. This plan
+            allows to reach your fitness goal effectively.{' '}
           </p>
           <button data-choice="COM2_SM" onClick={() => onClick('COM2_SM')}>
             Choose this option
@@ -1373,7 +1789,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  52: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  52: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 52</h1>
       <div>
@@ -1389,8 +1813,8 @@ const recommendation = {
         <div className="option" id="AUT2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. This program is compliant
-            with your health insurance provider.{' '}
+            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. This program is
+            compliant with your health insurance provider.{' '}
           </p>
           <button data-choice="AUT2_SM" onClick={() => onClick('AUT2_SM')}>
             Choose this option
@@ -1399,7 +1823,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  53: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  53: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 53</h1>
       <div>
@@ -1415,8 +1847,8 @@ const recommendation = {
         <div className="option" id="SOC2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Trusted by other students
-            from your area.
+            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Trusted by
+            other students from your area.
           </p>
           <button data-choice="SOC2_SM" onClick={() => onClick('SOC2_SM')}>
             Choose this option
@@ -1425,7 +1857,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  54: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  54: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 54</h1>
       <div>
@@ -1441,7 +1881,8 @@ const recommendation = {
         <div className="option" id="LIK2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Recommended by your friend
+            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Recommended by
+            your friend
             {homePageProps.bestFriend}.{' '}
           </p>
           <button data-choice="LIK2_SM" onClick={() => onClick('LIK2_SM')}>
@@ -1451,7 +1892,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  55: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  55: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 55</h1>
       <div>
@@ -1467,8 +1916,8 @@ const recommendation = {
         <div className="option" id="SCA2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Available for a limited
-            time. 5 out of 50 passes left only!{' '}
+            {instructionValues.sessionsPerWeek} days a week program for {instructionValues.fitnessGoal}. Available for a
+            limited time. 5 out of 50 passes left only!{' '}
           </p>
           <button data-choice="SCA2_SM" onClick={() => onClick('SCA2_SM')}>
             Choose this option
@@ -1477,7 +1926,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  56: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  56: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 56</h1>
       <div>
@@ -1493,7 +1950,8 @@ const recommendation = {
         <div className="option" id="NRA_REC2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Get a free nutrition guide.
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Get a free
+            nutrition guide.
           </p>
           <button data-choice="NRA_REC2_SM" onClick={() => onClick('NRA_REC2_SM')}>
             Choose this option
@@ -1502,7 +1960,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  57: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  57: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 57</h1>
       <div>
@@ -1518,8 +1984,8 @@ const recommendation = {
         <div className="option" id="NRA_COM2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a weekprogram for {instructionValues.fitnessGoal}. This plan allows to reach
-            your fitness goal effectively.
+            {instructionValues.sessionsPerWeek + 1} days a weekprogram for {instructionValues.fitnessGoal}. This plan
+            allows to reach your fitness goal effectively.
           </p>
           <button data-choice="NRA_COM2_SM" onClick={() => onClick('NRA_COM2_SM')}>
             Choose this option
@@ -1528,7 +1994,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  58: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  58: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 58</h1>
       <div>
@@ -1544,8 +2018,8 @@ const recommendation = {
         <div className="option" id="NRA_AUT2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. This program is compliant
-            health insurance provider.
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. This
+            program is compliant health insurance provider.
           </p>
           <button data-choice="NRA_AUT2_SM" onClick={() => onClick('NRA_AUT2_SM')}>
             Choose this option
@@ -1554,7 +2028,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  59: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  59: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 59</h1>
       <div>
@@ -1570,8 +2052,8 @@ const recommendation = {
         <div className="option" id="NRA_SOC2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Trusted by other students
-            area.{' '}
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Trusted by
+            other students area.{' '}
           </p>
           <button data-choice="NRA_SOC2_SM" onClick={() => onClick('NRA_SOC2_SM')}>
             Choose this option
@@ -1580,7 +2062,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  60: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  60: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 60</h1>
       <div>
@@ -1596,7 +2086,8 @@ const recommendation = {
         <div className="option" id="NRA_LIK2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Recommended by your friend
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Recommended
+            by your friend
             {homePageProps.bestFriend}.{' '}
           </p>
           <button data-choice="NRA_LIK2_SM" onClick={() => onClick('NRA_LIK2_SM')}>
@@ -1606,7 +2097,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  61: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  61: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 61</h1>
       <div>
@@ -1622,8 +2121,8 @@ const recommendation = {
         <div className="option" id="NRA_SCA2_SM">
           {/* Placeholder for recommendation details */}
           <p>
-            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Available for a limited
-            time. 5 out of 50 passes left only!{' '}
+            {instructionValues.sessionsPerWeek + 1} days a week program for {instructionValues.fitnessGoal}. Available
+            for a limited time. 5 out of 50 passes left only!{' '}
           </p>
           <button data-choice="NRA_SCA2_SM" onClick={() => onClick('NRA_SCA2_SM')}>
             Choose this option
@@ -1632,7 +2131,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  62: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  62: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 62</h1>
       <div>
@@ -1657,7 +2164,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  63: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  63: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 63</h1>
       <div>
@@ -1684,7 +2199,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  64: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  64: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 64</h1>
       <div>
@@ -1713,7 +2236,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  65: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  65: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 65</h1>
       <div>
@@ -1740,7 +2271,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  66: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  66: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 66</h1>
       <div>
@@ -1769,7 +2308,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  67: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  67: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 67</h1>
       <div>
@@ -1797,7 +2344,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  68: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  68: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 68</h1>
       <div>
@@ -1824,7 +2379,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  69: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  69: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 69</h1>
       <div>
@@ -1841,8 +2404,8 @@ const recommendation = {
         <div className="option" id="REC3_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} hours a week program.
-            Get complimentary access to a live Q&amp;A session.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek} hours a week program. Get complimentary access to a live Q&amp;A session.
           </p>
           <button data-choice="REC3_SR" onClick={() => onClick('REC3_SR')}>
             Choose this option
@@ -1851,15 +2414,23 @@ const recommendation = {
       </div>
     </div>
   ),
-  70: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  70: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 70</h1>
       <div>
         <div className="option" id="SR_COM3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} hours a week program.
-            *****{' '}
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek} hours a week program. *****{' '}
           </p>
           <button data-choice="SR_COM3" onClick={() => onClick('SR_COM3')}>
             Choose this option
@@ -1868,8 +2439,9 @@ const recommendation = {
         <div className="option" id="COM3_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} hours a week program.
-            This program allows you to reach your goal effectively.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek} hours a week program. This program allows you to reach your goal
+            effectively.
           </p>
           <button data-choice="COM3_SR" onClick={() => onClick('COM3_SR')}>
             Choose this option
@@ -1878,15 +2450,23 @@ const recommendation = {
       </div>
     </div>
   ),
-  71: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  71: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 71</h1>
       <div>
         <div className="option" id="SR_AUT3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} hours a week program.
-            *****{' '}
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek} hours a week program. *****{' '}
           </p>
           <button data-choice="SR_AUT3" onClick={() => onClick('SR_AUT3')}>
             Choose this option
@@ -1895,8 +2475,8 @@ const recommendation = {
         <div className="option" id="AUT3_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} hours a week program.
-            Recommended by Times Higher Education ranking.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek} hours a week program. Recommended by Times Higher Education ranking.
           </p>
           <button data-choice="AUT3_SR" onClick={() => onClick('AUT3_SR')}>
             Choose this option
@@ -1905,15 +2485,23 @@ const recommendation = {
       </div>
     </div>
   ),
-  72: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  72: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 72</h1>
       <div>
         <div className="option" id="SR_SOC3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} hours a week program.
-            *****{' '}
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek} hours a week program. *****{' '}
           </p>
           <button data-choice="SR_SOC3" onClick={() => onClick('SR_SOC3')}>
             Choose this option
@@ -1922,8 +2510,9 @@ const recommendation = {
         <div className="option" id="SOC3_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} hours a week program{' '}
-            .People in your age group with a {homePageProps.education} prefer this program.
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek} hours a week program .People in your age group with a{' '}
+            {homePageProps.education} prefer this program.
           </p>
           <button data-choice="SOC3_SR" onClick={() => onClick('SOC3_SR')}>
             Choose this option
@@ -1932,15 +2521,23 @@ const recommendation = {
       </div>
     </div>
   ),
-  73: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  73: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 73</h1>
       <div>
         <div className="option" id="SR_LIK3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} hours a week program.
-            *****{' '}
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek} hours a week program. *****{' '}
           </p>
           <button data-choice="SR_LIK3" onClick={() => onClick('SR_LIK3')}>
             Choose this option
@@ -1949,8 +2546,8 @@ const recommendation = {
         <div className="option" id="LIK3_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} hours a week program{' '}
-            .Rated highly by your friend {homePageProps.bestFriend}
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek} hours a week program .Rated highly by your friend {homePageProps.bestFriend}
           </p>
           <button data-choice="LIK3_SR" onClick={() => onClick('LIK3_SR')}>
             Choose this option
@@ -1959,15 +2556,23 @@ const recommendation = {
       </div>
     </div>
   ),
-  74: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  74: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 74</h1>
       <div>
         <div className="option" id="SR_SCA3">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} hours a week program.
-            *****{' '}
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek} hours a week program. *****{' '}
           </p>
           <button data-choice="SR_SCA3" onClick={() => onClick('SR_SCA3')}>
             Choose this option
@@ -1976,8 +2581,8 @@ const recommendation = {
         <div className="option" id="SCA3_SR">
           {/* Placeholder for recommendation details */}
           <p>
-            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} , {instructionValues.timePerWeek} hours a week program.
-            Only 3 slots left, limited time offer!
+            Learn {instructionValues.fieldOfStudy} through {instructionValues.learningMethods} ,{' '}
+            {instructionValues.timePerWeek} hours a week program. Only 3 slots left, limited time offer!
           </p>
           <button data-choice="SCA3_SR" onClick={() => onClick('SCA3_SR')}>
             Choose this option
@@ -1986,7 +2591,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  75: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  75: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 75</h1>
       <div>
@@ -2013,7 +2626,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  76: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  76: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 76</h1>
       <div>
@@ -2031,7 +2652,8 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Learn {instructionValues.learningGoal} through {instructionValues.learningMethods} ,
-            {instructionValues.timePerWeek + 3} hours a week program. This program allows you to reach your goal effectively.{' '}
+            {instructionValues.timePerWeek + 3} hours a week program. This program allows you to reach your goal
+            effectively.{' '}
           </p>
           <button data-choice="NRA_COM3_SR" onClick={() => onClick('NRA_COM3_SR')}>
             Choose this option
@@ -2040,7 +2662,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  77: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  77: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 77</h1>
       <div>
@@ -2067,7 +2697,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  78: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  78: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 78</h1>
       <div>
@@ -2085,7 +2723,8 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Learn {instructionValues.learningGoal} through {instructionValues.learningMethods} ,{' '}
-            {instructionValues.timePerWeek + 3} hours a week program. People in your age group with a {homePageProps.education} prefer this program.
+            {instructionValues.timePerWeek + 3} hours a week program. People in your age group with a{' '}
+            {homePageProps.education} prefer this program.
           </p>
           <button data-choice="NRA_SOC3_SR" onClick={() => onClick('NRA_SOC3_SR')}>
             Choose this option
@@ -2094,7 +2733,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  79: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  79: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 79</h1>
       <div>
@@ -2112,7 +2759,8 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Learn {instructionValues.learningGoal} through {instructionValues.learningMethods} ,{' '}
-            {instructionValues.timePerWeek + 3} hours a week program. Rated highly by your friend {homePageProps.bestFriend}.
+            {instructionValues.timePerWeek + 3} hours a week program. Rated highly by your friend{' '}
+            {homePageProps.bestFriend}.
           </p>
           <button data-choice="NRA_LIK3_SR" onClick={() => onClick('NRA_LIK3_SR')}>
             Choose this option
@@ -2121,7 +2769,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  80: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  80: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 80</h1>
       <div>
@@ -2148,7 +2804,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  81: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  81: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 81</h1>
       <div>
@@ -2175,7 +2839,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  82: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  82: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 82</h1>
       <div>
@@ -2193,7 +2865,8 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Learn {instructionValues.learningGoal} through {instructionValues.learningMethods} ,{' '}
-            {instructionValues.timePerWeek} hours a week program. This program allows you to reach your goal effectively.
+            {instructionValues.timePerWeek} hours a week program. This program allows you to reach your goal
+            effectively.
           </p>
           <button data-choice="COM3_SM" onClick={() => onClick('COM3_SM')}>
             Choose this option
@@ -2202,7 +2875,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  83: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  83: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 83</h1>
       <div>
@@ -2229,7 +2910,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  84: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  84: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 84</h1>
       <div>
@@ -2247,7 +2936,8 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Learn {instructionValues.learningGoal} through {instructionValues.learningMethods} ,{' '}
-            {instructionValues.timePerWeek} hours a week program. People in your age group with a {homePageProps.education} prefer this program.
+            {instructionValues.timePerWeek} hours a week program. People in your age group with a{' '}
+            {homePageProps.education} prefer this program.
           </p>
           <button data-choice="SOC3_SM" onClick={() => onClick('SOC3_SM')}>
             Choose this option
@@ -2256,7 +2946,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  85: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  85: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 85</h1>
       <div>
@@ -2283,7 +2981,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  86: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  86: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 86</h1>
       <div>
@@ -2310,7 +3016,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  87: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  87: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 87</h1>
       <div>
@@ -2337,7 +3051,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  88: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  88: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 88</h1>
       <div>
@@ -2355,7 +3077,8 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Learn {instructionValues.learningGoal} through {instructionValues.learningMethods} ,{' '}
-            {instructionValues.timePerWeek + 3} hours a week program. This program allows you to reach your goal effectively.
+            {instructionValues.timePerWeek + 3} hours a week program. This program allows you to reach your goal
+            effectively.
           </p>
           <button data-choice="NRA_COM3_SM" onClick={() => onClick('NRA_COM3_SM')}>
             Choose this option
@@ -2364,7 +3087,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  89: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  89: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 89</h1>
       <div>
@@ -2391,7 +3122,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  90: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  90: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 90</h1>
       <div>
@@ -2409,7 +3148,8 @@ const recommendation = {
           {/* Placeholder for recommendation details */}
           <p>
             Learn {instructionValues.learningGoal} through {instructionValues.learningMethods} ,{' '}
-            {instructionValues.timePerWeek + 3} hours a week program. People in your age group with a {homePageProps.education} prefer this program.
+            {instructionValues.timePerWeek + 3} hours a week program. People in your age group with a{' '}
+            {homePageProps.education} prefer this program.
           </p>
           <button data-choice="NRA_SOC3_SM" onClick={() => onClick('NRA_SOC3_SM')}>
             Choose this option
@@ -2418,7 +3158,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  91: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  91: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 91</h1>
       <div>
@@ -2445,7 +3193,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  92: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  92: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 92</h1>
       <div>
@@ -2472,7 +3228,15 @@ const recommendation = {
       </div>
     </div>
   ),
-  93: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
+  93: ({
+    onClick,
+    instructionValues,
+    homePageProps,
+  }: {
+    onClick: (val: string) => void;
+    instructionValues: InstructionProps;
+    homePageProps: HomePageProps;
+  }) => (
     <div>
       <h1>Recommendation page: 93</h1>
       <div>
@@ -2502,7 +3266,7 @@ const recommendation = {
 };
 
 export default function Recommendations() {
-  const [pageTimer, setPageTimer] = useState(Date.now())
+  const [pageTimer, setPageTimer] = useState(Date.now());
   const pages = useRandomPageRange();
   const setActivePage = useAppState((s) => s.setActivePage);
   const homePageProps = useAppState((s) => s.homePageProps);
@@ -2515,18 +3279,19 @@ export default function Recommendations() {
     if (toFeedback) {
       setActivePage('feedback');
     } else if (value) {
-      const now = Date.now()
-      const timeTaken = (now - pageTimer) / 1000
+      const now = Date.now();
+      const timeTaken = (now - pageTimer) / 1000;
       setRecommendationValues({ value, timeTaken: timeTaken });
       setActiveRandomPageIndex(activeRandomPageIndex + 1);
-      setPageTimer(now)
+      setPageTimer(now);
     }
   };
 
   return (
     <div>
       {pageTimer}
-      {pages[activeRandomPageIndex] && instructionValues &&
+      {pages[activeRandomPageIndex] &&
+        instructionValues &&
         // @ts-expect-error it will work
         recommendation[pages[activeRandomPageIndex]]({ onClick: onNavigation, instructionValues, homePageProps })}
       {recommendationValues.length === pages.length && (

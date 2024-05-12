@@ -1,10 +1,8 @@
-import { countries } from 'countries-list'
+import { countries } from 'countries-list';
 import { useState } from 'react';
 import { useAppState } from '../state/state';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { HomePageProps } from '../@types';
-
-
 
 export default function Home() {
   const { register, handleSubmit } = useForm<HomePageProps>();
@@ -12,8 +10,7 @@ export default function Home() {
   const setHomePageProps = useAppState((s) => s.setHomePageProps);
   const [customEthnicity, setCustomEthnicity] = useState(false);
   const [customGender, setCustomGender] = useState(false);
-  const [customHomeOwnership, setCustomHomeOwnership] = useState(false)
-
+  const [customHomeOwnership, setCustomHomeOwnership] = useState(false);
 
   const onSubmit: SubmitHandler<HomePageProps> = (data) => {
     setHomePageProps(data);

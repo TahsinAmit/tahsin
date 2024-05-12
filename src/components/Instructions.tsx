@@ -7,22 +7,21 @@ function useOnSubmit() {
   const setActivePage = useAppState((s) => s.setActivePage);
   const setInstructionValues = useAppState((s) => s.setInstructionValues);
   const onSubmit: SubmitHandler<InstructionProps> = (data) => {
-    const { budget, sessionsPerWeek, timePerWeek, ...rest } = data
-    const numberValues: Record<string, number> = {}
-    if (budget) numberValues.budget = parseInt(budget, 10)
-    if (sessionsPerWeek) numberValues.sessionsPerWeek = parseInt(sessionsPerWeek, 10)
-    if (timePerWeek) numberValues.timePerWeek = parseInt(timePerWeek, 10)
+    const { budget, sessionsPerWeek, timePerWeek, ...rest } = data;
+    const numberValues: Record<string, number> = {};
+    if (budget) numberValues.budget = parseInt(budget, 10);
+    if (sessionsPerWeek) numberValues.sessionsPerWeek = parseInt(sessionsPerWeek, 10);
+    if (timePerWeek) numberValues.timePerWeek = parseInt(timePerWeek, 10);
     setInstructionValues({ ...rest, ...numberValues });
     setActivePage('recommendations');
   };
-  return onSubmit
+  return onSubmit;
 }
-
 
 const instruction = {
   1: () => {
     const { register, handleSubmit } = useForm<InstructionProps>();
-    const onSubmit = useOnSubmit()
+    const onSubmit = useOnSubmit();
     return (
       <div>
         <h2>Instruction page</h2>
@@ -81,7 +80,7 @@ const instruction = {
   },
   2: () => {
     const { register, handleSubmit } = useForm<InstructionProps>();
-    const onSubmit = useOnSubmit()
+    const onSubmit = useOnSubmit();
 
     return (
       <div>
@@ -137,7 +136,7 @@ const instruction = {
   },
   3: () => {
     const { register, handleSubmit } = useForm<InstructionProps>();
-    const onSubmit = useOnSubmit()
+    const onSubmit = useOnSubmit();
 
     return (
       <div>
