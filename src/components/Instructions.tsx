@@ -15,7 +15,7 @@ const instruction = {
 
     return (
       <div>
-        <h2>Instruction page 1</h2>
+        <h2>Instruction page</h2>
         <h2>Welcome to RSAI, your AI-powered recommender system</h2>
         <p>
           Our goal is to simplify your travel planning process by providing personalized flight suggestions that cater
@@ -80,7 +80,7 @@ const instruction = {
 
     return (
       <div>
-        <h2>Instruction page 2</h2>
+        <h2>Instruction page</h2>
         <h2>Welcome to RSAI, your AI-powered recommender system</h2>
         <p>
           Our goal is to simplify your fitness planning process by providing personalized workout suggestions that cater
@@ -141,7 +141,7 @@ const instruction = {
 
     return (
       <div>
-        <h2>Instruction page 3</h2>
+        <h2>Instruction page</h2>
         <h2>Welcome to RSAI, your AI-powered recommender system</h2>
         <p>
           Our goal is to simplify your travel planning process by providing personalized flight suggestions that cater

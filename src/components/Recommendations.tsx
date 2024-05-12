@@ -5,7 +5,7 @@ import { useRandomPageRange } from '../utils';
 const recommendation = {
   1: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 1</h1>
+      <h1>Recommendation page</h1>
       <div className="option" id="RAT_REC1">
         {/* Placeholder for recommendation details */}
         <p>
@@ -30,7 +30,7 @@ const recommendation = {
   ),
   2: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 2</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_COM1">
           {/* Placeholder for recommendation details */}
@@ -57,7 +57,7 @@ const recommendation = {
   ),
   3: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 3</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_AUT1">
           {/* Placeholder for recommendation details */}
@@ -84,7 +84,7 @@ const recommendation = {
   ),
   4: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 4</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_SOC1">
           {/* Placeholder for recommendation details */}
@@ -111,7 +111,7 @@ const recommendation = {
   ),
   5: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 5</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_LIK1">
           {/* Placeholder for recommendation details */}
@@ -138,7 +138,7 @@ const recommendation = {
   ),
   6: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 6</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_SCA1">
           {/* Placeholder for recommendation details */}
@@ -165,7 +165,7 @@ const recommendation = {
   ),
   7: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 7</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_REC1">
           {/* Placeholder for recommendation details */}
@@ -192,7 +192,7 @@ const recommendation = {
   ),
   8: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 8</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_COM1">
           {/* Placeholder for recommendation details */}
@@ -219,7 +219,7 @@ const recommendation = {
   ),
   9: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 9</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_AUT1">
           {/* Placeholder for recommendation details */}
@@ -246,7 +246,7 @@ const recommendation = {
   ),
   10: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 10</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_SOC1">
           {/* Placeholder for recommendation details */}
@@ -273,7 +273,7 @@ const recommendation = {
   ),
   11: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 11</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_LIK1">
           {/* Placeholder for recommendation details */}
@@ -300,7 +300,7 @@ const recommendation = {
   ),
   12: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 12</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_SCA1">
           {/* Placeholder for recommendation details */}
@@ -327,7 +327,7 @@ const recommendation = {
   ),
   13: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 13</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_REC1">
           {/* Placeholder for recommendation details */}
@@ -354,7 +354,7 @@ const recommendation = {
   ),
   14: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 14</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_COM1">
           {/* Placeholder for recommendation details */}
@@ -381,7 +381,7 @@ const recommendation = {
   ),
   15: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 15</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_AUT1">
           {/* Placeholder for recommendation details */}
@@ -408,7 +408,7 @@ const recommendation = {
   ),
   16: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 16</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_SOC1">
           {/* Placeholder for recommendation details */}
@@ -435,7 +435,7 @@ const recommendation = {
   ),
   17: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 17</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_LIK1">
           {/* Placeholder for recommendation details */}
@@ -462,7 +462,7 @@ const recommendation = {
   ),
   18: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 18</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_SCA1">
           {/* Placeholder for recommendation details */}
@@ -489,7 +489,7 @@ const recommendation = {
   ),
   19: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 19</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_REC1">
           {/* Placeholder for recommendation details */}
@@ -516,7 +516,7 @@ const recommendation = {
   ),
   20: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 20</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_COM1">
           {/* Placeholder for recommendation details */}
@@ -543,7 +543,7 @@ const recommendation = {
   ),
   21: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 21</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_AUT1">
           {/* Placeholder for recommendation details */}
@@ -570,7 +570,7 @@ const recommendation = {
   ),
   22: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 22</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_SOC1">
           {/* Placeholder for recommendation details */}
@@ -597,7 +597,7 @@ const recommendation = {
   ),
   23: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 23</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_LIK1">
           {/* Placeholder for recommendation details */}
@@ -624,7 +624,7 @@ const recommendation = {
   ),
   24: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 24</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_SCA1">
           {/* Placeholder for recommendation details */}
@@ -651,7 +651,7 @@ const recommendation = {
   ),
   25: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 25</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_REC1">
           {/* Placeholder for recommendation details */}
@@ -678,7 +678,7 @@ const recommendation = {
   ),
   26: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 26</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_COM1">
           {/* Placeholder for recommendation details */}
@@ -705,7 +705,7 @@ const recommendation = {
   ),
   27: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 27</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_AUT1">
           {/* Placeholder for recommendation details */}
@@ -732,7 +732,7 @@ const recommendation = {
   ),
   28: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 28</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_SOC1">
           {/* Placeholder for recommendation details */}
@@ -759,7 +759,7 @@ const recommendation = {
   ),
   29: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 29</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_LIK1">
           {/* Placeholder for recommendation details */}
@@ -786,7 +786,7 @@ const recommendation = {
   ),
   30: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 30</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_SCA1">
           {/* Placeholder for recommendation details */}
@@ -813,7 +813,7 @@ const recommendation = {
   ),
   31: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 31</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_SM1">
           {/* Placeholder for recommendation details */}
@@ -840,7 +840,7 @@ const recommendation = {
   ),
   32: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 32</h1>
+      <h1>Recommendation page</h1>
       <div id="recommendations" className="flex-container">
         <div className="option" id="RAT_REC2">
           {/* Placeholder for recommendation details */}
@@ -865,7 +865,7 @@ const recommendation = {
   ),
   33: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 33</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_COM2">
           {/* Placeholder for recommendation details */}
@@ -892,7 +892,7 @@ const recommendation = {
   ),
   34: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 34</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_AUT2">
           {/* Placeholder for recommendation details */}
@@ -919,7 +919,7 @@ const recommendation = {
   ),
   35: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 35</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_SOC2">
           {/* Placeholder for recommendation details */}
@@ -946,7 +946,7 @@ const recommendation = {
   ),
   36: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 36</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_LIK2">
           {/* Placeholder for recommendation details */}
@@ -973,7 +973,7 @@ const recommendation = {
   ),
   37: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 37</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_SCA2">
           {/* Placeholder for recommendation details */}
@@ -1000,7 +1000,7 @@ const recommendation = {
   ),
   38: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 38</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_REC2">
           {/* Placeholder for recommendation details */}
@@ -1025,7 +1025,7 @@ const recommendation = {
   ),
   39: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 39</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_COM2">
           {/* Placeholder for recommendation details */}
@@ -1051,7 +1051,7 @@ const recommendation = {
   ),
   40: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 40</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_AUT2">
           {/* Placeholder for recommendation details */}
@@ -1077,7 +1077,7 @@ const recommendation = {
   ),
   41: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 41</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_SOC2">
           {/* Placeholder for recommendation details */}
@@ -1103,7 +1103,7 @@ const recommendation = {
   ),
   42: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 42</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_LIK2">
           {/* Placeholder for recommendation details */}
@@ -1129,7 +1129,7 @@ const recommendation = {
   ),
   43: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 43</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_SCA2">
           {/* Placeholder for recommendation details */}
@@ -1155,7 +1155,7 @@ const recommendation = {
   ),
   44: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 44</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_REC2">
           {/* Placeholder for recommendation details */}
@@ -1180,7 +1180,7 @@ const recommendation = {
   ),
   45: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 45</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_COM2">
           {/* Placeholder for recommendation details */}
@@ -1206,7 +1206,7 @@ const recommendation = {
   ),
   46: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 46</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_AUT2">
           {/* Placeholder for recommendation details */}
@@ -1232,7 +1232,7 @@ const recommendation = {
   ),
   47: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 47</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_SOC2">
           {/* Placeholder for recommendation details */}
@@ -1258,7 +1258,7 @@ const recommendation = {
   ),
   48: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 48</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_LIK2">
           {/* Placeholder for recommendation details */}
@@ -1284,7 +1284,7 @@ const recommendation = {
   ),
   49: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 49</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_SCA2">
           {/* Placeholder for recommendation details */}
@@ -1310,7 +1310,7 @@ const recommendation = {
   ),
   50: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 50</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_REC2">
           {/* Placeholder for recommendation details */}
@@ -1335,7 +1335,7 @@ const recommendation = {
   ),
   51: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 51</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_COM2">
           {/* Placeholder for recommendation details */}
@@ -1361,7 +1361,7 @@ const recommendation = {
   ),
   52: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 52</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_AUT2">
           {/* Placeholder for recommendation details */}
@@ -1387,7 +1387,7 @@ const recommendation = {
   ),
   53: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 53</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_SOC2">
           {/* Placeholder for recommendation details */}
@@ -1413,7 +1413,7 @@ const recommendation = {
   ),
   54: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 54</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_LIK2">
           {/* Placeholder for recommendation details */}
@@ -1439,7 +1439,7 @@ const recommendation = {
   ),
   55: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 55</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_SCA2">
           {/* Placeholder for recommendation details */}
@@ -1465,7 +1465,7 @@ const recommendation = {
   ),
   56: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 56</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_REC2">
           {/* Placeholder for recommendation details */}
@@ -1490,7 +1490,7 @@ const recommendation = {
   ),
   57: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 57</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_COM2">
           {/* Placeholder for recommendation details */}
@@ -1516,7 +1516,7 @@ const recommendation = {
   ),
   58: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 58</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_AUT2">
           {/* Placeholder for recommendation details */}
@@ -1542,7 +1542,7 @@ const recommendation = {
   ),
   59: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 59</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_SOC2">
           {/* Placeholder for recommendation details */}
@@ -1568,7 +1568,7 @@ const recommendation = {
   ),
   60: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 60</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_LIK2">
           {/* Placeholder for recommendation details */}
@@ -1594,7 +1594,7 @@ const recommendation = {
   ),
   61: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 61</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_SCA2">
           {/* Placeholder for recommendation details */}
@@ -1620,7 +1620,7 @@ const recommendation = {
   ),
   62: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 62</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM2_SR">
           {/* Placeholder for recommendation details */}
@@ -1645,7 +1645,7 @@ const recommendation = {
   ),
   63: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 63</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_REC3">
           {/* Placeholder for recommendation details */}
@@ -1672,7 +1672,7 @@ const recommendation = {
   ),
   64: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 64</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_COM3">
           {/* Placeholder for recommendation details */}
@@ -1701,7 +1701,7 @@ const recommendation = {
   ),
   65: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 65</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_AUT3">
           {/* Placeholder for recommendation details */}
@@ -1728,7 +1728,7 @@ const recommendation = {
   ),
   66: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 66</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_SOC3">
           {/* Placeholder for recommendation details */}
@@ -1757,7 +1757,7 @@ const recommendation = {
   ),
   67: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 67</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_LIK3">
           {/* Placeholder for recommendation details */}
@@ -1785,7 +1785,7 @@ const recommendation = {
   ),
   68: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 68</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="RAT_SCA3">
           {/* Placeholder for recommendation details */}
@@ -1812,7 +1812,7 @@ const recommendation = {
   ),
   69: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 69</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_REC3">
           {/* Placeholder for recommendation details */}
@@ -1839,7 +1839,7 @@ const recommendation = {
   ),
   70: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 70</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_COM3">
           {/* Placeholder for recommendation details */}
@@ -1866,7 +1866,7 @@ const recommendation = {
   ),
   71: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 71</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_AUT3">
           {/* Placeholder for recommendation details */}
@@ -1893,7 +1893,7 @@ const recommendation = {
   ),
   72: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 72</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_SOC3">
           {/* Placeholder for recommendation details */}
@@ -1920,7 +1920,7 @@ const recommendation = {
   ),
   73: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 73</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_LIK3">
           {/* Placeholder for recommendation details */}
@@ -1947,7 +1947,7 @@ const recommendation = {
   ),
   74: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 74</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_SCA3">
           {/* Placeholder for recommendation details */}
@@ -1974,7 +1974,7 @@ const recommendation = {
   ),
   75: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 75</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_REC3">
           {/* Placeholder for recommendation details */}
@@ -2001,7 +2001,7 @@ const recommendation = {
   ),
   76: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 76</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_COM3">
           {/* Placeholder for recommendation details */}
@@ -2028,7 +2028,7 @@ const recommendation = {
   ),
   77: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 77</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_AUT3">
           {/* Placeholder for recommendation details */}
@@ -2055,7 +2055,7 @@ const recommendation = {
   ),
   78: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 78</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_SOC3">
           {/* Placeholder for recommendation details */}
@@ -2082,7 +2082,7 @@ const recommendation = {
   ),
   79: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 79</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_LIK3">
           {/* Placeholder for recommendation details */}
@@ -2109,7 +2109,7 @@ const recommendation = {
   ),
   80: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 80</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_NRA_SCA3">
           {/* Placeholder for recommendation details */}
@@ -2136,7 +2136,7 @@ const recommendation = {
   ),
   81: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 81</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_REC3">
           {/* Placeholder for recommendation details */}
@@ -2163,7 +2163,7 @@ const recommendation = {
   ),
   82: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 82</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_COM3">
           {/* Placeholder for recommendation details */}
@@ -2190,7 +2190,7 @@ const recommendation = {
   ),
   83: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 83</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_AUT3">
           {/* Placeholder for recommendation details */}
@@ -2217,7 +2217,7 @@ const recommendation = {
   ),
   84: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 84</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_SOC3">
           {/* Placeholder for recommendation details */}
@@ -2244,7 +2244,7 @@ const recommendation = {
   ),
   85: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 85</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_LIK3">
           {/* Placeholder for recommendation details */}
@@ -2271,7 +2271,7 @@ const recommendation = {
   ),
   86: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 86</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_SCA3">
           {/* Placeholder for recommendation details */}
@@ -2298,7 +2298,7 @@ const recommendation = {
   ),
   87: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 87</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_REC3">
           {/* Placeholder for recommendation details */}
@@ -2325,7 +2325,7 @@ const recommendation = {
   ),
   88: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 88</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_COM3">
           {/* Placeholder for recommendation details */}
@@ -2352,7 +2352,7 @@ const recommendation = {
   ),
   89: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 89</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_AUT3">
           {/* Placeholder for recommendation details */}
@@ -2379,7 +2379,7 @@ const recommendation = {
   ),
   90: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 90</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_SOC3">
           {/* Placeholder for recommendation details */}
@@ -2406,7 +2406,7 @@ const recommendation = {
   ),
   91: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 91</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_LIK3">
           {/* Placeholder for recommendation details */}
@@ -2433,7 +2433,7 @@ const recommendation = {
   ),
   92: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 92</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SM_NRA_SCA3">
           {/* Placeholder for recommendation details */}
@@ -2460,7 +2460,7 @@ const recommendation = {
   ),
   93: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
     <div>
-      <h1>Recommendation page: 93</h1>
+      <h1>Recommendation page</h1>
       <div>
         <div className="option" id="SR_SM3">
           {/* Placeholder for recommendation details */}
@@ -2504,17 +2504,21 @@ export default function Recommendations() {
       setActiveRandomPageIndex(activeRandomPageIndex + 1);
     }
   };
+  const allQuestionsAnswered = Object.values(recommendation).length === recommendationValues.length
   return (
     <div>
-      {pages[activeRandomPageIndex] && instructionValues &&
+      {pages[activeRandomPageIndex] && instructionValues && homePageProps &&
         // @ts-expect-error it will work
         recommendation[pages[activeRandomPageIndex]]({ onClick: onNavigation, instructionValues, homePageProps })}
-      {activeRandomPageIndex + 1 === pages.length && (
+      {allQuestionsAnswered && (
         <button type="submit" onClick={() => onNavigation(undefined, true)}>
           feedback page
         </button>
       )}
-      <p>{JSON.stringify(recommendationValues)}</p>
+      <p>Object.values(recommendation).length: {Object.values(recommendation).length}...</p>
+      <p>recommendationValues.length: {recommendationValues.length}...</p>
+      <p><b>{allQuestionsAnswered && 'Survey complete'}</b></p>
+      <p><b>Answered {recommendationValues.length} out of 30 questions</b></p>
     </div>
   );
 }
