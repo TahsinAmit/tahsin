@@ -3287,9 +3287,17 @@ export default function Recommendations() {
     }
   };
 
+  useEffect(() => {
+    if (recommendationValues.length === pages.length) {
+      /* TODO: API call here */
+      // something
+      // fetch('/api', {method: 'POST'}, {homePageProps, instructionValues, recommendationValues})
+      console.log('Servey finished');
+    }
+  }, [recommendationValues, pages]);
+
   return (
     <div>
-      {pageTimer}
       {pages[activeRandomPageIndex] &&
         instructionValues &&
         // @ts-expect-error it will work
@@ -3298,12 +3306,14 @@ export default function Recommendations() {
         <>
           <h1>Survey completed!</h1>
           {/* <a href="http://google.com">Go to Google</a> */}
+          <pre>
+            {JSON.stringify({ homePageValues: homePageProps, instructionValues, recommendationValues }, null, 2)}
+          </pre>
           <button type="submit" onClick={() => onNavigation(undefined, true)}>
             Go to feedback page
           </button>
         </>
       )}
-      <pre>{JSON.stringify(recommendationValues, null, 2)}</pre>
     </div>
   );
 }
