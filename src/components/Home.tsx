@@ -12,6 +12,7 @@ export default function Home() {
   const setHomePageProps = useAppState((s) => s.setHomePageProps);
   const [customEthnicity, setCustomEthnicity] = useState(false);
   const [customGender, setCustomGender] = useState(false);
+  const [customHomeOwnership, setCustomHomeOwnership] = useState(false)
 
 
   const onSubmit: SubmitHandler<HomePageProps> = (data) => {
@@ -78,6 +79,7 @@ export default function Home() {
         <select id="country" {...register('country', { required: true })}>
           <option value="">Select</option>
           {Object.values(countries).filter(c => c.name !== 'Antarctica')
+            //@ts-expect-error
             .sort((a, b) => a.name > b.name)
             .map(c => <option value={c.name} key={c.name}>{c.name}</option>)
           }
@@ -151,13 +153,20 @@ export default function Home() {
         <br />
 
         <label htmlFor="homeOwnership">Do you currently own or rent your home?</label>
-        <select id="homeOwnership" {...register('homeOwnership', { required: true })}>
+        <select id="homeOwnership" {
+          ...register('homeOwnership', {
+            required: true, onChange(event) {
+              setCustomHomeOwnership(event.target.value === 'Other rent');
+            },
+          },)
+        }>
           <option value="">Select</option>
           <option value="Own my home">Own my home</option>
           <option value="Rent my home">Rent my home</option>
-          <option value="Other">Other (please specify)</option>
+          <option value="Other rent">Other (please specify)</option>
           <option value="Prefer not say">Prefer not say</option>
         </select>
+        {customHomeOwnership && <input type="text" {...register('customHomeOwnership', { required: true })}></input>}
         <br />
         <label htmlFor="bestFriend">Who is your best friend whose recommendations you would always trust?</label>
         <input type="text" id="bestFriend" {...register('bestFriend', { required: true })}></input>

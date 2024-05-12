@@ -25,6 +25,7 @@ export interface HomePageProps {
   income: string;
   householdSize: string;
   homeOwnership: string;
+  customHomeOwnership: string;
   bestFriend: string;
   authorityFigure: string;
   environmentalChoices: string;
