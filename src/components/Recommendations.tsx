@@ -3,24 +3,10 @@ import { HomePageProps, InstructionProps } from '../@types';
 import { useAppState } from '../state/state';
 import { useRandomPageRange } from '../utils';
 
-function useOnPageLoadTime() {
-  const [pageTimer, setPageTimer] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setPageTimer(pageTimer + 1);
-    }, 1000);
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-  return pageTimer;
-}
-
 const recommendation = {
   1: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -53,7 +39,6 @@ const recommendation = {
   2: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -123,7 +108,6 @@ const recommendation = {
   4: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -193,7 +177,6 @@ const recommendation = {
   6: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -228,7 +211,6 @@ const recommendation = {
   7: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -263,7 +245,6 @@ const recommendation = {
   8: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -333,7 +314,6 @@ const recommendation = {
   10: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -403,7 +383,6 @@ const recommendation = {
   12: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -438,7 +417,6 @@ const recommendation = {
   13: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -473,7 +451,6 @@ const recommendation = {
   14: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -543,7 +520,6 @@ const recommendation = {
   16: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -613,7 +589,6 @@ const recommendation = {
   18: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -648,7 +623,6 @@ const recommendation = {
   19: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -683,7 +657,6 @@ const recommendation = {
   20: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -753,7 +726,6 @@ const recommendation = {
   22: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -823,7 +795,6 @@ const recommendation = {
   24: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -858,7 +829,6 @@ const recommendation = {
   25: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -893,7 +863,6 @@ const recommendation = {
   26: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -963,7 +932,6 @@ const recommendation = {
   28: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1033,7 +1001,6 @@ const recommendation = {
   30: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1068,7 +1035,6 @@ const recommendation = {
   31: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1103,7 +1069,6 @@ const recommendation = {
   32: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1138,7 +1103,6 @@ const recommendation = {
   33: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1173,7 +1137,6 @@ const recommendation = {
   34: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1208,7 +1171,6 @@ const recommendation = {
   35: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1279,7 +1241,6 @@ const recommendation = {
   37: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1314,7 +1275,6 @@ const recommendation = {
   38: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1348,7 +1308,6 @@ const recommendation = {
   39: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1382,7 +1341,6 @@ const recommendation = {
   40: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1416,7 +1374,6 @@ const recommendation = {
   41: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1485,7 +1442,6 @@ const recommendation = {
   43: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1519,7 +1475,6 @@ const recommendation = {
   44: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1553,7 +1508,6 @@ const recommendation = {
   45: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1587,7 +1541,6 @@ const recommendation = {
   46: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1621,7 +1574,6 @@ const recommendation = {
   47: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1690,7 +1642,6 @@ const recommendation = {
   49: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1724,7 +1675,6 @@ const recommendation = {
   50: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1758,7 +1708,6 @@ const recommendation = {
   51: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1792,7 +1741,6 @@ const recommendation = {
   52: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1826,7 +1774,6 @@ const recommendation = {
   53: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1895,7 +1842,6 @@ const recommendation = {
   55: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1929,7 +1875,6 @@ const recommendation = {
   56: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1963,7 +1908,6 @@ const recommendation = {
   57: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -1997,7 +1941,6 @@ const recommendation = {
   58: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2031,7 +1974,6 @@ const recommendation = {
   59: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2100,7 +2042,6 @@ const recommendation = {
   61: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2134,7 +2075,6 @@ const recommendation = {
   62: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2167,7 +2107,6 @@ const recommendation = {
   63: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2202,7 +2141,6 @@ const recommendation = {
   64: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2239,7 +2177,6 @@ const recommendation = {
   65: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2347,7 +2284,6 @@ const recommendation = {
   68: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2382,7 +2318,6 @@ const recommendation = {
   69: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2417,7 +2352,6 @@ const recommendation = {
   70: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2453,7 +2387,6 @@ const recommendation = {
   71: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2559,7 +2492,6 @@ const recommendation = {
   74: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2594,7 +2526,6 @@ const recommendation = {
   75: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2629,7 +2560,6 @@ const recommendation = {
   76: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2665,7 +2595,6 @@ const recommendation = {
   77: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2772,7 +2701,6 @@ const recommendation = {
   80: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2807,7 +2735,6 @@ const recommendation = {
   81: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2842,7 +2769,6 @@ const recommendation = {
   82: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2878,7 +2804,6 @@ const recommendation = {
   83: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2949,7 +2874,6 @@ const recommendation = {
   85: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -2984,7 +2908,6 @@ const recommendation = {
   86: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -3019,7 +2942,6 @@ const recommendation = {
   87: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -3054,7 +2976,6 @@ const recommendation = {
   88: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -3090,7 +3011,6 @@ const recommendation = {
   89: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -3196,7 +3116,6 @@ const recommendation = {
   92: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
@@ -3231,7 +3150,6 @@ const recommendation = {
   93: ({
     onClick,
     instructionValues,
-    homePageProps,
   }: {
     onClick: (val: string) => void;
     instructionValues: InstructionProps;
