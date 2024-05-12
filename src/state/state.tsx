@@ -27,12 +27,12 @@ interface State {
   instructionPageNumber: number;
   activeRandomPageIndex: number;
   setActiveRandomPageIndex: (activeRandomPageIndex: number) => void;
-  recommendationValues: string[];
+  recommendationValues: { value: string; timeTaken: number }[];
   homePageProps?: HomePageProps;
   setHomePageProps: (homePageProps: HomePageProps) => void
   instructionValues?: InstructionProps;
   setInstructionValues: (props: InstructionProps) => void;
-  setRecommendationValues: (recommendationValue: string) => void;
+  setRecommendationValues: (props: { value: string; timeTaken: number }) => void;
 }
 
 export const useAppState = create<State>((set, state) => ({

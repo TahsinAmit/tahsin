@@ -1,6 +1,20 @@
+import { useEffect, useState } from 'react';
 import { HomePageProps, InstructionProps } from '../@types';
 import { useAppState } from '../state/state';
 import { useRandomPageRange } from '../utils';
+
+function useOnPageLoadTime() {
+  const [pageTimer, setPageTimer] = useState(0)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPageTimer(pageTimer + 1)
+    }, 1000)
+    return () => {
+      clearInterval(interval)
+    }
+  }, [])
+  return pageTimer
+}
 
 const recommendation = {
   1: ({ onClick, instructionValues, homePageProps }: { onClick: (val: string) => void; instructionValues: InstructionProps, homePageProps: HomePageProps }) => (
@@ -2488,6 +2502,7 @@ const recommendation = {
 };
 
 export default function Recommendations() {
+  const [pageTimer, setPageTimer] = useState(Date.now())
   const pages = useRandomPageRange();
   const setActivePage = useAppState((s) => s.setActivePage);
   const homePageProps = useAppState((s) => s.homePageProps);
@@ -2496,17 +2511,21 @@ export default function Recommendations() {
   const setRecommendationValues = useAppState((s) => s.setRecommendationValues);
   const recommendationValues = useAppState((s) => s.recommendationValues);
   const setActiveRandomPageIndex = useAppState((s) => s.setActiveRandomPageIndex);
-  const onNavigation = (recommendationValue: string | undefined, toFeedback = false) => {
+  const onNavigation = (value: string | undefined, toFeedback = false) => {
     if (toFeedback) {
       setActivePage('feedback');
-    } else if (recommendationValue) {
-      setRecommendationValues(recommendationValue);
+    } else if (value) {
+      const now = Date.now()
+      const timeTaken = (now - pageTimer) / 1000
+      setRecommendationValues({ value, timeTaken: timeTaken });
       setActiveRandomPageIndex(activeRandomPageIndex + 1);
+      setPageTimer(now)
     }
   };
-  console.log(instructionValues)
+
   return (
     <div>
+      {pageTimer}
       {pages[activeRandomPageIndex] && instructionValues &&
         // @ts-expect-error it will work
         recommendation[pages[activeRandomPageIndex]]({ onClick: onNavigation, instructionValues, homePageProps })}
@@ -2519,6 +2538,7 @@ export default function Recommendations() {
           </button>
         </>
       )}
+      <pre>{JSON.stringify(recommendationValues, null, 2)}</pre>
     </div>
   );
 }
