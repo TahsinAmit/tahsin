@@ -1,3 +1,4 @@
+import { countries } from 'countries-list'
 import { useState } from 'react';
 import { useAppState } from '../state/state';
 import { SubmitHandler, useForm } from 'react-hook-form';
@@ -11,6 +12,7 @@ export default function Home() {
   const setHomePageProps = useAppState((s) => s.setHomePageProps);
   const [customEthnicity, setCustomEthnicity] = useState(false);
   const [customGender, setCustomGender] = useState(false);
+
 
   const onSubmit: SubmitHandler<HomePageProps> = (data) => {
     setHomePageProps(data);
@@ -73,7 +75,13 @@ export default function Home() {
         {customGender && <input type="text" {...register('customGender', { required: true })}></input>}
         <br />
         <label htmlFor="country">What is your country of residence?</label>
-        <input type="text" {...register('country', { required: true })}></input>
+        <select id="country" {...register('country', { required: true })}>
+          <option value="">Select</option>
+          {Object.values(countries).filter(c => c.name !== 'Antarctica')
+            .sort((a, b) => a.name > b.name)
+            .map(c => <option value={c.name} key={c.name}>{c.name}</option>)
+          }
+        </select>
 
         <br />
 
