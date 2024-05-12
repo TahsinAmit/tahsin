@@ -12,7 +12,6 @@ function useOnSubmit() {
     if (budget) numberValues.budget = parseInt(budget, 10)
     if (sessionsPerWeek) numberValues.sessionsPerWeek = parseInt(sessionsPerWeek, 10)
     if (timePerWeek) numberValues.timePerWeek = parseInt(timePerWeek, 10)
-    console.log({ ...rest, ...numberValues })
     setInstructionValues({ ...rest, ...numberValues });
     setActivePage('recommendations');
   };

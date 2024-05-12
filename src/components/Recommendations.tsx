@@ -2510,12 +2510,15 @@ export default function Recommendations() {
       {pages[activeRandomPageIndex] && instructionValues &&
         // @ts-expect-error it will work
         recommendation[pages[activeRandomPageIndex]]({ onClick: onNavigation, instructionValues, homePageProps })}
-      {activeRandomPageIndex + 1 === pages.length && (
-        <button type="submit" onClick={() => onNavigation(undefined, true)}>
-          feedback page
-        </button>
+      {recommendationValues.length === pages.length && (
+        <>
+          <h1>Survey completed!</h1>
+          {/* <a href="http://google.com">Go to Google</a> */}
+          <button type="submit" onClick={() => onNavigation(undefined, true)}>
+            Go to feedback page
+          </button>
+        </>
       )}
-      <p>{JSON.stringify(recommendationValues)}</p>
     </div>
   );
 }
