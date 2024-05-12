@@ -35,7 +35,7 @@ export default function Home() {
 
         <br />
 
-        <label htmlFor="ethnicity">How would you describe your ethnicity?</label>
+        {/* <label htmlFor="ethnicity">How would you describe your ethnicity?</label>
         <select
           id="ethnicity"
           {...register('ethnicity', {
@@ -203,7 +203,7 @@ export default function Home() {
           requiring visual assessment.
         </label>
 
-        <br />
+        <br /> */}
         <input type="submit" value="Go to instructions" />
       </form>
     </div>

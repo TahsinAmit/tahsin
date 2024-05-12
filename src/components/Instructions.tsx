@@ -3,16 +3,27 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { useAppState } from '../state/state';
 import { InstructionProps } from '../@types';
 
+function useOnSubmit() {
+  const setActivePage = useAppState((s) => s.setActivePage);
+  const setInstructionValues = useAppState((s) => s.setInstructionValues);
+  const onSubmit: SubmitHandler<InstructionProps> = (data) => {
+    const { budget, sessionsPerWeek, timePerWeek, ...rest } = data
+    const numberValues: Record<string, number> = {}
+    if (budget) numberValues.budget = parseInt(budget, 10)
+    if (sessionsPerWeek) numberValues.sessionsPerWeek = parseInt(sessionsPerWeek, 10)
+    if (timePerWeek) numberValues.timePerWeek = parseInt(timePerWeek, 10)
+    console.log({ ...rest, ...numberValues })
+    setInstructionValues({ ...rest, ...numberValues });
+    setActivePage('recommendations');
+  };
+  return onSubmit
+}
+
+
 const instruction = {
   1: () => {
     const { register, handleSubmit } = useForm<InstructionProps>();
-    const setActivePage = useAppState((s) => s.setActivePage);
-    const setInstructionValues = useAppState((s) => s.setInstructionValues);
-    const onSubmit: SubmitHandler<InstructionProps> = (data) => {
-      setInstructionValues(data);
-      setActivePage('recommendations');
-    };
-
+    const onSubmit = useOnSubmit()
     return (
       <div>
         <h2>Instruction page</h2>
@@ -71,12 +82,7 @@ const instruction = {
   },
   2: () => {
     const { register, handleSubmit } = useForm<InstructionProps>();
-    const setInstructionValues = useAppState((s) => s.setInstructionValues);
-    const setActivePage = useAppState((s) => s.setActivePage);
-    const onSubmit: SubmitHandler<InstructionProps> = (data) => {
-      setInstructionValues(data);
-      setActivePage('recommendations');
-    };
+    const onSubmit = useOnSubmit()
 
     return (
       <div>
@@ -122,7 +128,7 @@ const instruction = {
             <option value="">Select</option>
             <option value={3}>3 days</option>
             <option value={4}>4 days</option>
-            <option value={4}>5 days</option>
+            <option value={5}>5 days</option>
           </select>
 
           <input type="submit" value="Click here to see AI generated recommendation"></input>
@@ -132,12 +138,7 @@ const instruction = {
   },
   3: () => {
     const { register, handleSubmit } = useForm<InstructionProps>();
-    const setInstructionValues = useAppState((s) => s.setInstructionValues);
-    const setActivePage = useAppState((s) => s.setActivePage);
-    const onSubmit: SubmitHandler<InstructionProps> = (data) => {
-      setInstructionValues(data);
-      setActivePage('recommendations');
-    };
+    const onSubmit = useOnSubmit()
 
     return (
       <div>
