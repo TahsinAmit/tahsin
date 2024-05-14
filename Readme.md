@@ -1,5 +1,5 @@
 # Use Bun.JS NOT node
-
+https://bun.sh/
 ## How to run frontend
 ```sh
 cd frontend
