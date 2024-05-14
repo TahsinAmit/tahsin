@@ -3186,6 +3186,7 @@ const recommendation = {
 export default function Recommendations() {
   const [pageTimer, setPageTimer] = useState(Date.now());
   const pages = useRandomPageRange();
+  const sessionId = useAppState((s) => s.sessionId);
   const setActivePage = useAppState((s) => s.setActivePage);
   const homePageProps = useAppState((s) => s.homePageProps);
   const instructionValues = useAppState((s) => s.instructionValues);
@@ -3207,8 +3208,13 @@ export default function Recommendations() {
 
   useEffect(() => {
     if (recommendationValues.length === pages.length) {
-      /* TODO: API call here */
-      // something
+      fetch('http://localhost:8080/survey', {
+        method: 'POST',
+        body: JSON.stringify({ sessionId: { homePageProps, instructionValues, recommendationValues } }),
+        headers: {
+          'Content-type': 'application/json',
+        },
+      });
       // fetch('/api', {method: 'POST'}, {homePageProps, instructionValues, recommendationValues})
       console.log('Servey finished');
     }
