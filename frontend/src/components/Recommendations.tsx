@@ -3210,7 +3210,7 @@ export default function Recommendations() {
     if (recommendationValues.length === pages.length) {
       fetch('http://localhost:8080/survey', {
         method: 'POST',
-        body: JSON.stringify({ sessionId: { homePageProps, instructionValues, recommendationValues } }),
+        body: JSON.stringify({ [sessionId]: { homePageProps, instructionValues, recommendationValues } }),
         headers: {
           'Content-type': 'application/json',
         },
