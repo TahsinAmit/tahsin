@@ -13,7 +13,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 1</h1>
       <div className="option" id="RAT_REC1">
         {/* Placeholder for recommendation details */}
         <p>
@@ -45,7 +44,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 2</h1>
       <div>
         <div className="option" id="RAT_COM1">
           {/* Placeholder for recommendation details */}
@@ -80,7 +78,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 3</h1>
       <div>
         <div className="option" id="RAT_AUT1">
           {/* Placeholder for recommendation details */}
@@ -114,7 +111,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 4</h1>
       <div>
         <div className="option" id="RAT_SOC1">
           {/* Placeholder for recommendation details */}
@@ -149,7 +145,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 5</h1>
       <div>
         <div className="option" id="RAT_LIK1">
           {/* Placeholder for recommendation details */}
@@ -183,7 +178,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 6</h1>
       <div>
         <div className="option" id="RAT_SCA1">
           {/* Placeholder for recommendation details */}
@@ -217,7 +211,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 7</h1>
       <div>
         <div className="option" id="SR_REC1">
           {/* Placeholder for recommendation details */}
@@ -251,7 +244,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 8</h1>
       <div>
         <div className="option" id="SR_COM1">
           {/* Placeholder for recommendation details */}
@@ -286,7 +278,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 9</h1>
       <div>
         <div className="option" id="SR_AUT1">
           {/* Placeholder for recommendation details */}
@@ -320,7 +311,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 10</h1>
       <div>
         <div className="option" id="SR_SOC1">
           {/* Placeholder for recommendation details */}
@@ -355,7 +345,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 11</h1>
       <div>
         <div className="option" id="SR_LIK1">
           {/* Placeholder for recommendation details */}
@@ -389,7 +378,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 12</h1>
       <div>
         <div className="option" id="SR_SCA1">
           {/* Placeholder for recommendation details */}
@@ -423,7 +411,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 13</h1>
       <div>
         <div className="option" id="SR_NRA_REC1">
           {/* Placeholder for recommendation details */}
@@ -457,7 +444,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 14</h1>
       <div>
         <div className="option" id="SR_NRA_COM1">
           {/* Placeholder for recommendation details */}
@@ -492,7 +478,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 15</h1>
       <div>
         <div className="option" id="SR_NRA_AUT1">
           {/* Placeholder for recommendation details */}
@@ -526,7 +511,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 16</h1>
       <div>
         <div className="option" id="SR_NRA_SOC1">
           {/* Placeholder for recommendation details */}
@@ -561,7 +545,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 17</h1>
       <div>
         <div className="option" id="SR_NRA_LIK1">
           {/* Placeholder for recommendation details */}
@@ -595,7 +578,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 18</h1>
       <div>
         <div className="option" id="SR_NRA_SCA1">
           {/* Placeholder for recommendation details */}
@@ -629,7 +611,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 19</h1>
       <div>
         <div className="option" id="SM_REC1">
           {/* Placeholder for recommendation details */}
@@ -663,7 +644,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 20</h1>
       <div>
         <div className="option" id="SM_COM1">
           {/* Placeholder for recommendation details */}
@@ -698,7 +678,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 21</h1>
       <div>
         <div className="option" id="SM_AUT1">
           {/* Placeholder for recommendation details */}
@@ -732,7 +711,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 22</h1>
       <div>
         <div className="option" id="SM_SOC1">
           {/* Placeholder for recommendation details */}
@@ -767,7 +745,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 23</h1>
       <div>
         <div className="option" id="SM_LIK1">
           {/* Placeholder for recommendation details */}
@@ -801,7 +778,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 24</h1>
       <div>
         <div className="option" id="SM_SCA1">
           {/* Placeholder for recommendation details */}
@@ -835,7 +811,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 25</h1>
       <div>
         <div className="option" id="SM_NRA_REC1">
           {/* Placeholder for recommendation details */}
@@ -869,7 +844,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 26</h1>
       <div>
         <div className="option" id="SM_NRA_COM1">
           {/* Placeholder for recommendation details */}
@@ -904,7 +878,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 27</h1>
       <div>
         <div className="option" id="SM_NRA_AUT1">
           {/* Placeholder for recommendation details */}
@@ -938,7 +911,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 28</h1>
       <div>
         <div className="option" id="SM_NRA_SOC1">
           {/* Placeholder for recommendation details */}
@@ -973,7 +945,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 29</h1>
       <div>
         <div className="option" id="SM_NRA_LIK1">
           {/* Placeholder for recommendation details */}
@@ -1007,7 +978,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 30</h1>
       <div>
         <div className="option" id="SM_NRA_SCA1">
           {/* Placeholder for recommendation details */}
@@ -1041,7 +1011,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 31</h1>
       <div>
         <div className="option" id="SR_SM1">
           {/* Placeholder for recommendation details */}
@@ -1075,7 +1044,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 32</h1>
       <div id="recommendations" className="flex-container">
         <div className="option" id="RAT_REC2">
           {/* Placeholder for recommendation details */}
@@ -1109,7 +1077,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 33</h1>
       <div>
         <div className="option" id="RAT_COM2">
           {/* Placeholder for recommendation details */}
@@ -1143,7 +1110,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 34</h1>
       <div>
         <div className="option" id="RAT_AUT2">
           {/* Placeholder for recommendation details */}
@@ -1177,7 +1143,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 35</h1>
       <div>
         <div className="option" id="RAT_SOC2">
           {/* Placeholder for recommendation details */}
@@ -1212,7 +1177,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 36</h1>
       <div>
         <div className="option" id="RAT_LIK2">
           {/* Placeholder for recommendation details */}
@@ -1247,7 +1211,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 37</h1>
       <div>
         <div className="option" id="RAT_SCA2">
           {/* Placeholder for recommendation details */}
@@ -1281,7 +1244,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 38</h1>
       <div>
         <div className="option" id="SR_REC2">
           {/* Placeholder for recommendation details */}
@@ -1314,7 +1276,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 39</h1>
       <div>
         <div className="option" id="SR_COM2">
           {/* Placeholder for recommendation details */}
@@ -1347,7 +1308,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 40</h1>
       <div>
         <div className="option" id="SR_AUT2">
           {/* Placeholder for recommendation details */}
@@ -1380,7 +1340,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 41</h1>
       <div>
         <div className="option" id="SR_SOC2">
           {/* Placeholder for recommendation details */}
@@ -1414,7 +1373,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 42</h1>
       <div>
         <div className="option" id="SR_LIK2">
           {/* Placeholder for recommendation details */}
@@ -1448,7 +1406,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 43</h1>
       <div>
         <div className="option" id="SR_SCA2">
           {/* Placeholder for recommendation details */}
@@ -1481,7 +1438,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 44</h1>
       <div>
         <div className="option" id="SR_NRA_REC2">
           {/* Placeholder for recommendation details */}
@@ -1514,7 +1470,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 45</h1>
       <div>
         <div className="option" id="SR_NRA_COM2">
           {/* Placeholder for recommendation details */}
@@ -1547,7 +1502,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 46</h1>
       <div>
         <div className="option" id="SR_NRA_AUT2">
           {/* Placeholder for recommendation details */}
@@ -1580,7 +1534,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 47</h1>
       <div>
         <div className="option" id="SR_NRA_SOC2">
           {/* Placeholder for recommendation details */}
@@ -1614,7 +1567,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 48</h1>
       <div>
         <div className="option" id="SR_NRA_LIK2">
           {/* Placeholder for recommendation details */}
@@ -1648,7 +1600,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 49</h1>
       <div>
         <div className="option" id="SR_NRA_SCA2">
           {/* Placeholder for recommendation details */}
@@ -1681,7 +1632,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 50</h1>
       <div>
         <div className="option" id="SM_REC2">
           {/* Placeholder for recommendation details */}
@@ -1714,7 +1664,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 51</h1>
       <div>
         <div className="option" id="SM_COM2">
           {/* Placeholder for recommendation details */}
@@ -1747,7 +1696,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 52</h1>
       <div>
         <div className="option" id="SM_AUT2">
           {/* Placeholder for recommendation details */}
@@ -1780,7 +1728,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 53</h1>
       <div>
         <div className="option" id="SM_SOC2">
           {/* Placeholder for recommendation details */}
@@ -1814,7 +1761,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 54</h1>
       <div>
         <div className="option" id="SM_LIK2">
           {/* Placeholder for recommendation details */}
@@ -1848,7 +1794,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 55</h1>
       <div>
         <div className="option" id="SM_SCA2">
           {/* Placeholder for recommendation details */}
@@ -1881,7 +1826,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 56</h1>
       <div>
         <div className="option" id="SM_NRA_REC2">
           {/* Placeholder for recommendation details */}
@@ -1914,7 +1858,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 57</h1>
       <div>
         <div className="option" id="SM_NRA_COM2">
           {/* Placeholder for recommendation details */}
@@ -1947,7 +1890,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 58</h1>
       <div>
         <div className="option" id="SM_NRA_AUT2">
           {/* Placeholder for recommendation details */}
@@ -1980,7 +1922,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 59</h1>
       <div>
         <div className="option" id="SM_NRA_SOC2">
           {/* Placeholder for recommendation details */}
@@ -2014,7 +1955,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 60</h1>
       <div>
         <div className="option" id="SM_NRA_LIK2">
           {/* Placeholder for recommendation details */}
@@ -2048,7 +1988,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 61</h1>
       <div>
         <div className="option" id="SM_NRA_SCA2">
           {/* Placeholder for recommendation details */}
@@ -2081,7 +2020,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 62</h1>
       <div>
         <div className="option" id="SM2_SR">
           {/* Placeholder for recommendation details */}
@@ -2113,7 +2051,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 63</h1>
       <div>
         <div className="option" id="RAT_REC3">
           {/* Placeholder for recommendation details */}
@@ -2147,7 +2084,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 64</h1>
       <div>
         <div className="option" id="RAT_COM3">
           {/* Placeholder for recommendation details */}
@@ -2183,7 +2119,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 65</h1>
       <div>
         <div className="option" id="RAT_AUT3">
           {/* Placeholder for recommendation details */}
@@ -2218,7 +2153,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 66</h1>
       <div>
         <div className="option" id="RAT_SOC3">
           {/* Placeholder for recommendation details */}
@@ -2255,7 +2189,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 67</h1>
       <div>
         <div className="option" id="RAT_LIK3">
           {/* Placeholder for recommendation details */}
@@ -2290,7 +2223,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 68</h1>
       <div>
         <div className="option" id="RAT_SCA3">
           {/* Placeholder for recommendation details */}
@@ -2324,7 +2256,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 69</h1>
       <div>
         <div className="option" id="SR_REC3">
           {/* Placeholder for recommendation details */}
@@ -2358,7 +2289,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 70</h1>
       <div>
         <div className="option" id="SR_COM3">
           {/* Placeholder for recommendation details */}
@@ -2393,7 +2323,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 71</h1>
       <div>
         <div className="option" id="SR_AUT3">
           {/* Placeholder for recommendation details */}
@@ -2428,7 +2357,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 72</h1>
       <div>
         <div className="option" id="SR_SOC3">
           {/* Placeholder for recommendation details */}
@@ -2464,7 +2392,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 73</h1>
       <div>
         <div className="option" id="SR_LIK3">
           {/* Placeholder for recommendation details */}
@@ -2498,7 +2425,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 74</h1>
       <div>
         <div className="option" id="SR_SCA3">
           {/* Placeholder for recommendation details */}
@@ -2532,7 +2458,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 75</h1>
       <div>
         <div className="option" id="SR_NRA_REC3">
           {/* Placeholder for recommendation details */}
@@ -2566,7 +2491,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 76</h1>
       <div>
         <div className="option" id="SR_NRA_COM3">
           {/* Placeholder for recommendation details */}
@@ -2601,7 +2525,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 77</h1>
       <div>
         <div className="option" id="SR_NRA_AUT3">
           {/* Placeholder for recommendation details */}
@@ -2636,7 +2559,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 78</h1>
       <div>
         <div className="option" id="SR_NRA_SOC3">
           {/* Placeholder for recommendation details */}
@@ -2672,7 +2594,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 79</h1>
       <div>
         <div className="option" id="SR_NRA_LIK3">
           {/* Placeholder for recommendation details */}
@@ -2707,7 +2628,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 80</h1>
       <div>
         <div className="option" id="SR_NRA_SCA3">
           {/* Placeholder for recommendation details */}
@@ -2741,7 +2661,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 81</h1>
       <div>
         <div className="option" id="SM_REC3">
           {/* Placeholder for recommendation details */}
@@ -2775,7 +2694,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 82</h1>
       <div>
         <div className="option" id="SM_COM3">
           {/* Placeholder for recommendation details */}
@@ -2810,7 +2728,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 83</h1>
       <div>
         <div className="option" id="SM_AUT3">
           {/* Placeholder for recommendation details */}
@@ -2845,7 +2762,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 84</h1>
       <div>
         <div className="option" id="SM_SOC3">
           {/* Placeholder for recommendation details */}
@@ -2880,7 +2796,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 85</h1>
       <div>
         <div className="option" id="SM_LIK3">
           {/* Placeholder for recommendation details */}
@@ -2914,7 +2829,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 86</h1>
       <div>
         <div className="option" id="SM_SCA3">
           {/* Placeholder for recommendation details */}
@@ -2948,7 +2862,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 87</h1>
       <div>
         <div className="option" id="SM_NRA_REC3">
           {/* Placeholder for recommendation details */}
@@ -2982,7 +2895,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 88</h1>
       <div>
         <div className="option" id="SM_NRA_COM3">
           {/* Placeholder for recommendation details */}
@@ -3017,7 +2929,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 89</h1>
       <div>
         <div className="option" id="SM_NRA_AUT3">
           {/* Placeholder for recommendation details */}
@@ -3052,7 +2963,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 90</h1>
       <div>
         <div className="option" id="SM_NRA_SOC3">
           {/* Placeholder for recommendation details */}
@@ -3088,7 +2998,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 91</h1>
       <div>
         <div className="option" id="SM_NRA_LIK3">
           {/* Placeholder for recommendation details */}
@@ -3122,7 +3031,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 92</h1>
       <div>
         <div className="option" id="SM_NRA_SCA3">
           {/* Placeholder for recommendation details */}
@@ -3156,7 +3064,6 @@ const recommendation = {
     homePageProps: HomePageProps;
   }) => (
     <div>
-      <h1>Recommendation page: 93</h1>
       <div>
         <div className="option" id="SR_SM3">
           {/* Placeholder for recommendation details */}
@@ -3184,60 +3091,43 @@ const recommendation = {
 };
 
 export default function Recommendations() {
-  const [pageTimer, setPageTimer] = useState(Date.now());
   const pages = useRandomPageRange();
-  const sessionId = useAppState((s) => s.sessionId);
-  const setActivePage = useAppState((s) => s.setActivePage);
-  const homePageProps = useAppState((s) => s.homePageProps);
+  const [pageTimer, setPageTimer] = useState(Date.now());
   const instructionValues = useAppState((s) => s.instructionValues);
-  const activeRandomPageIndex = useAppState((s) => s.activeRandomPageIndex);
-  const setRecommendationValues = useAppState((s) => s.setRecommendationValues);
   const recommendationValues = useAppState((s) => s.recommendationValues);
-  const setActiveRandomPageIndex = useAppState((s) => s.setActiveRandomPageIndex);
-  const onNavigation = (value: string | undefined, toFeedback = false) => {
-    if (toFeedback) {
-      setActivePage('feedback');
-    } else if (value) {
+  const setRecommendationValues = useAppState((s) => s.setRecommendationValues);
+  const homePageProps = useAppState((s) => s.homePageProps);
+  const setActivePage = useAppState((s) => s.setActivePage);
+  const [activeRandomPageIndex, setActiveRandomPageIndex] = useState(0);
+  const onClick = (value: string | undefined) => {
+    if (value) {
+      const nextPage = activeRandomPageIndex + 1;
       const now = Date.now();
       const timeTaken = (now - pageTimer) / 1000;
-      setRecommendationValues({ value, timeTaken: timeTaken });
-      setActiveRandomPageIndex(activeRandomPageIndex + 1);
+      setRecommendationValues({
+        [`recommendation-page-${pages[activeRandomPageIndex]}-value`]: value,
+        [`recommendation-page-${pages[activeRandomPageIndex]}-timetaken`]: timeTaken,
+      });
+      console.log('Now going to the next page no: ' + pages[nextPage]);
+      console.log('Total recommendations: ' + nextPage);
+      setActiveRandomPageIndex(nextPage);
       setPageTimer(now);
     }
   };
-
   useEffect(() => {
-    if (recommendationValues.length === pages.length) {
-      fetch('http://localhost:8080/survey', {
-        method: 'POST',
-        body: JSON.stringify({ [sessionId]: { homePageProps, instructionValues, recommendationValues } }),
-        headers: {
-          'Content-type': 'application/json',
-        },
-      });
-      // fetch('/api', {method: 'POST'}, {homePageProps, instructionValues, recommendationValues})
-      console.log('Servey finished');
+    if (Object.keys(recommendationValues).length / 2 === pages.length) {
+      setActivePage('feedback');
+      console.log('done');
+      return;
     }
   }, [recommendationValues, pages]);
-
   return (
     <div>
+      <h2>Recommendation page</h2>
       {pages[activeRandomPageIndex] &&
         instructionValues &&
         // @ts-expect-error it will work
-        recommendation[pages[activeRandomPageIndex]]({ onClick: onNavigation, instructionValues, homePageProps })}
-      {recommendationValues.length === pages.length && (
-        <>
-          <h1>Survey completed!</h1>
-          {/* <a href="http://google.com">Go to Google</a> */}
-          <pre>
-            {JSON.stringify({ homePageValues: homePageProps, instructionValues, recommendationValues }, null, 2)}
-          </pre>
-          <button type="submit" onClick={() => onNavigation(undefined, true)}>
-            Go to feedback page
-          </button>
-        </>
-      )}
+        recommendation[pages[activeRandomPageIndex]]({ onClick, instructionValues, homePageProps })}
     </div>
   );
 }

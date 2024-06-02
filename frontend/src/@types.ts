@@ -32,3 +32,11 @@ export interface HomePageProps {
   medicationAck: boolean;
   visionAck: boolean;
 }
+
+export interface FeedbackProps {
+  trustworthy: number;
+  sourceInfluence: number;
+  futureTrust: number;
+  likeMost: string;
+  suggestions: string;
+}

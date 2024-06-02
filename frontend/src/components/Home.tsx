@@ -32,7 +32,7 @@ export default function Home() {
 
         <br />
 
-        {/* <label htmlFor="ethnicity">How would you describe your ethnicity?</label>
+        <label htmlFor="ethnicity">How would you describe your ethnicity?</label>
         <select
           id="ethnicity"
           {...register('ethnicity', {
@@ -75,11 +75,15 @@ export default function Home() {
         <label htmlFor="country">What is your country of residence?</label>
         <select id="country" {...register('country', { required: true })}>
           <option value="">Select</option>
-          {Object.values(countries).filter(c => c.name !== 'Antarctica')
+          {Object.values(countries)
+            .filter((c) => c.name !== 'Antarctica')
             //@ts-expect-error
             .sort((a, b) => a.name > b.name)
-            .map(c => <option value={c.name} key={c.name}>{c.name}</option>)
-          }
+            .map((c) => (
+              <option value={c.name} key={c.name}>
+                {c.name}
+              </option>
+            ))}
         </select>
 
         <br />
@@ -150,13 +154,15 @@ export default function Home() {
         <br />
 
         <label htmlFor="homeOwnership">Do you currently own or rent your home?</label>
-        <select id="homeOwnership" {
-          ...register('homeOwnership', {
-            required: true, onChange(event) {
+        <select
+          id="homeOwnership"
+          {...register('homeOwnership', {
+            required: true,
+            onChange(event) {
               setCustomHomeOwnership(event.target.value === 'Other rent');
             },
-          },)
-        }>
+          })}
+        >
           <option value="">Select</option>
           <option value="Own my home">Own my home</option>
           <option value="Rent my home">Rent my home</option>
@@ -200,7 +206,7 @@ export default function Home() {
           requiring visual assessment.
         </label>
 
-        <br /> */}
+        <br />
         <input type="submit" value="Go to instructions" />
       </form>
     </div>

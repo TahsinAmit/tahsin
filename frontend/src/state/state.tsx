@@ -5,6 +5,7 @@ import Recommendations from '../components/Recommendations';
 import { randomNumber } from '../utils';
 import Feedback from '../components/Feedback';
 import { HomePageProps, InstructionProps } from '../@types';
+import { SurveyComplete } from '../components/SurveyComplete';
 
 function randomId(): string {
   const uint32 = window.crypto.getRandomValues(new Uint32Array(1))[0];
@@ -16,10 +17,11 @@ const pages = {
   instructions: () => <Instructions></Instructions>,
   recommendations: () => <Recommendations></Recommendations>,
   feedback: () => <Feedback></Feedback>,
+  surveyComplete: () => <SurveyComplete></SurveyComplete>,
 };
 
 type Ipage = keyof typeof pages;
-
+type Recommendation = Record<string, string | number>;
 interface State {
   sessionId: string;
   activePage: () => JSX.Element;
@@ -27,12 +29,12 @@ interface State {
   instructionPageNumber: number;
   activeRandomPageIndex: number;
   setActiveRandomPageIndex: (activeRandomPageIndex: number) => void;
-  recommendationValues: { value: string; timeTaken: number }[];
+  recommendationValues: Recommendation;
   homePageProps?: HomePageProps;
   setHomePageProps: (homePageProps: HomePageProps) => void;
   instructionValues?: InstructionProps;
   setInstructionValues: (props: InstructionProps) => void;
-  setRecommendationValues: (props: { value: string; timeTaken: number }) => void;
+  setRecommendationValues: (props: Recommendation) => void;
 }
 
 export const useAppState = create<State>((set, state) => ({
@@ -46,9 +48,9 @@ export const useAppState = create<State>((set, state) => ({
   setActiveRandomPageIndex(activeRandomPageIndex) {
     set({ activeRandomPageIndex });
   },
-  recommendationValues: [],
+  recommendationValues: {},
   setRecommendationValues(recommendationValue) {
-    const recommendationValues = state().recommendationValues.concat(recommendationValue);
+    const recommendationValues = { ...state().recommendationValues, ...recommendationValue };
     set({ recommendationValues });
   },
   setInstructionValues(instructionValues) {

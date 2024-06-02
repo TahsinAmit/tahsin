@@ -9,9 +9,10 @@ function useOnSubmit() {
   const onSubmit: SubmitHandler<InstructionProps> = (data) => {
     const { budget, sessionsPerWeek, timePerWeek, ...rest } = data;
     const numberValues: Record<string, number> = {};
-    if (budget) numberValues.budget = parseInt(budget, 10);
-    if (sessionsPerWeek) numberValues.sessionsPerWeek = parseInt(sessionsPerWeek, 10);
-    if (timePerWeek) numberValues.timePerWeek = parseInt(timePerWeek, 10);
+    if (budget) numberValues.budget = parseInt(budget.toString(), 10);
+    if (sessionsPerWeek) numberValues.sessionsPerWeek = parseInt(sessionsPerWeek.toString(), 10);
+    if (timePerWeek) numberValues.timePerWeek = parseInt(timePerWeek.toString(), 10);
+    // @ts-expect-error it should work
     setInstructionValues({ ...rest, ...numberValues });
     setActivePage('recommendations');
   };

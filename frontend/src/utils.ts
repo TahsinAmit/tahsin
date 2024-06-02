@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { useAppState } from './state/state';
 
 export function randomNumber(minimum: number, maximum: number) {
@@ -6,7 +7,7 @@ export function randomNumber(minimum: number, maximum: number) {
 
 export function generateRandomArray(min: number, max: number) {
   const randomArray: number[] = [];
-  while (randomArray.length < max - min) {
+  while (randomArray.length - 1 < max - min) {
     const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
     if (!randomArray.includes(randomNumber)) {
       randomArray.push(randomNumber);
@@ -27,5 +28,5 @@ export function useRandomPageRange() {
     startPage = 63;
     endPage = 93;
   }
-  return generateRandomArray(startPage, endPage);
+  return useMemo(() => generateRandomArray(startPage, endPage), []);
 }
