@@ -20,7 +20,7 @@ export default function Feedback() {
       ...feedbackProps,
     };
     console.log(JSON.stringify({ payload }, null, 2));
-    await fetch('http://localhost:8001/survey', {
+    await fetch('/survey', {
       method: 'POST',
       body: JSON.stringify(payload),
       headers: {

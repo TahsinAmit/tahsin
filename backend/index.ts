@@ -1,19 +1,20 @@
-import dotenv from 'dotenv'
 import express from "express";
 import cors from "cors";
 import { dbPromise } from "./lib";
 import { surveys } from "./models/survey.schema";
 
-dotenv.config({ path: `.env.${process.env.NODE_ENV}` })
 
 const app = express();
 const port = process.env.PORT || 8080;
+
+app.set('view engine', 'html');
+app.use(express.static(__dirname + '/public'));
 
 app.use(cors());
 app.use(express.json())
 
 app.get("/", (_,res)=>{
-  res.json({ok:'ok'})
+  res.render("index.html")
 })
 
 app.post("/survey", async(req, res) => {
