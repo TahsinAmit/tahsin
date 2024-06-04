@@ -1,72 +1,74 @@
-import { mysqlTable,serial, json, varchar, int, float, boolean } from 'drizzle-orm/mysql-core';
+import { mysqlTable, serial, json, varchar, int, float, boolean } from 'drizzle-orm/mysql-core';
 
-function createRecommendationSchema(max:number){
+const options = { length: 153 };
+
+function createRecommendationSchema(max: number) {
   let schema: Record<string, ReturnType<typeof varchar | typeof float>> = {}
   for (let index = 0; index < max; index++) {
-    const value = `recommendation-page-${index+1}-value`
-    const timetaken = `recommendation-page-${index+1}-timetaken`
-    schema[value]= varchar(value, {length: 256}).default("0")
-    schema[timetaken]= float(timetaken).default(0)
+    const value = `recommendation-page-${index + 1}-value`
+    const timetaken = `recommendation-page-${index + 1}-timetaken`
+    schema[value] = varchar(value, options).default("0")
+    schema[timetaken] = float(timetaken).default(0)
   }
   return schema
 }
 
-function createInstructionSchema(){
+function createInstructionSchema() {
   return {
-    preferredDestination: varchar('preferredDestination', {length: 256}).default(""),
-    layoverDuration: varchar('layoverDuration', {length: 256}).default(""),
+    preferredDestination: varchar('preferredDestination', options).default(""),
+    layoverDuration: varchar('layoverDuration', options).default(""),
     budget: int('budget').default(0),
-    seatPreference: varchar('seatPreference', {length: 256}).default(""),
-    fitnessGoal: varchar('fitnessGoal', {length: 256}).default(""),
-    timePerSession: varchar('timePerSession', {length: 256}).default(""),
+    seatPreference: varchar('seatPreference', options).default(""),
+    fitnessGoal: varchar('fitnessGoal', options).default(""),
+    timePerSession: varchar('timePerSession', options).default(""),
     sessionsPerWeek: int('sessionsPerWeek').default(0),
-    learningGoal: varchar('learningGoal', {length: 256}).default(""),
-    learningMethods: varchar('learningMethods', {length: 256}).default(""),
+    learningGoal: varchar('learningGoal', options).default(""),
+    learningMethods: varchar('learningMethods', options).default(""),
     timePerWeek: int('timePerWeek').default(0),
-    fieldOfStudy: varchar('fieldOfStudy', {length: 256}).default(""),
+    fieldOfStudy: varchar('fieldOfStudy', options).default(""),
   }
 }
 
-function createHomeSchema(){
+function createHomeSchema() {
   return {
-    ethnicity: varchar('ethnicity', {length: 256}),
-    customEthnicity: varchar('customEthnicity', {length: 256}),
-    gender: varchar('gender', {length: 256}),
-    customGender: varchar('customGender', {length: 256}),
-    country: varchar('country', {length: 256}),
-    education: varchar('education', {length: 256}),
-    maritalStatus: varchar('maritalStatus', {length: 256}),
-    employment: varchar('employment', {length: 256}),
-    income: varchar('income', {length: 256}),
-    householdSize: varchar('householdSize', {length: 256}),
-    homeOwnership: varchar('homeOwnership', {length: 256}),
-    customHomeOwnership: varchar('customHomeOwnership', {length: 256}),
-    bestFriend: varchar('bestFriend', {length: 256}),
-    authorityFigure: varchar('authorityFigure', {length: 256}),
-    environmentalChoices: varchar('environmentalChoices', {length: 256}),
+    ethnicity: varchar('ethnicity', options),
+    customEthnicity: varchar('customEthnicity', options),
+    gender: varchar('gender', options),
+    customGender: varchar('customGender', options),
+    country: varchar('country', options),
+    education: varchar('education', options),
+    maritalStatus: varchar('maritalStatus', options),
+    employment: varchar('employment', options),
+    income: varchar('income', options),
+    householdSize: varchar('householdSize', options),
+    homeOwnership: varchar('homeOwnership', options),
+    customHomeOwnership: varchar('customHomeOwnership', options),
+    bestFriend: varchar('bestFriend', options),
+    authorityFigure: varchar('authorityFigure', options),
+    environmentalChoices: varchar('environmentalChoices', options),
     medicationAck: boolean('medicationAck').default(false),
     visionAck: boolean('visionAck').default(false),
   }
 }
 
-function createFeedbackSchema(){
+function createFeedbackSchema() {
   return {
     trustworthy: int('trustworthy'),
     sourceInfluence: int('sourceInfluence'),
     futureTrust: int('futureTrust'),
-    likeMost: varchar('likeMost', {length: 256}),
-    suggestions: varchar('suggestions', {length: 256}),
+    likeMost: varchar('likeMost', options),
+    suggestions: varchar('suggestions', options),
   }
 }
 
 // declaring enum in database
 export const surveys = mysqlTable('surveys', {
   id: serial("id").primaryKey(),
-  sessionId:varchar("sessionId", {length: 256}).unique().notNull(),
+  sessionId: varchar("sessionId", options).unique().notNull(),
   instructionPageNumber: int('instructionPageNumber').notNull(),
-  ...createRecommendationSchema(93),
-  ...createInstructionSchema(),
   ...createHomeSchema(),
+  ...createInstructionSchema(),
+  ...createRecommendationSchema(93),
   ...createFeedbackSchema()
 });
 
