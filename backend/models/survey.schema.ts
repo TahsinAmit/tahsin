@@ -1,6 +1,6 @@
 import { mysqlTable, serial, json, varchar, int, float, boolean } from 'drizzle-orm/mysql-core';
 
-const options = { length: 153 };
+const options = { length: 128 };
 
 function createRecommendationSchema(max: number) {
   let schema: Record<string, ReturnType<typeof varchar | typeof float>> = {}
